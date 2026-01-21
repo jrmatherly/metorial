@@ -587,6 +587,381 @@ interface Config {
 
 **Consistency is key:** Following these conventions ensures your server integrates seamlessly with the existing ecosystem and provides a predictable experience for users.
 
+## Advanced Contribution Types
+
+While most contributors add new MCP servers, there are many other ways to contribute to the Metorial MCP Containers project. This section covers contributions to the core infrastructure: SDK development, shared packages, automation scripts, and catalog management.
+
+### Contributing to the SDK
+
+The **@metorial/mcp-server-sdk** (located in `packages/sdk/`) is the foundation that all MCP servers build upon. Contributing to the SDK requires understanding its architecture and ensuring backward compatibility.
+
+**What the SDK provides:**
+- Core MCP server creation: `metorial.createServer()`
+- OAuth handling: `metorial.setOauthHandler()`
+- Resource templates: `ResourceTemplate` type
+- Schema validation: Re-exports of `zod` for convenience
+- TypeScript types for server configuration
+
+**When to contribute to the SDK:**
+- Adding new OAuth providers or authentication patterns
+- Improving error handling or validation
+- Adding utility functions that all servers would benefit from
+- Enhancing type safety or TypeScript definitions
+- Optimizing performance for server initialization
+
+**SDK contribution workflow:**
+
+| Step | Action | Location |
+|------|--------|----------|
+| **1. Review existing code** | Understand current implementation | `packages/sdk/src/lib.ts` |
+| **2. Check usage patterns** | See how servers use the SDK | `servers/github/server.ts`, `servers/slack/server.ts` |
+| **3. Implement changes** | Add features or improvements | `packages/sdk/src/` |
+| **4. Update types** | Ensure TypeScript definitions are correct | `packages/sdk/src/lib.ts` exports |
+| **5. Test with servers** | Verify changes don't break existing servers | `bun run build all` |
+| **6. Document changes** | Update SDK documentation | `docs/ai-context/sdk-usage.md` |
+
+**Example SDK enhancement:**
+
+```typescript
+// Adding a new utility to the SDK
+export function createRateLimiter(options: RateLimitOptions) {
+  // Implementation that all servers can use
+  return {
+    check: async () => { /* ... */ },
+    reset: () => { /* ... */ }
+  };
+}
+```
+
+**Testing SDK changes:**
+```bash
+# Build SDK package
+cd packages/sdk
+bun install
+bun run build  # if build script exists
+
+# Test against existing servers
+cd ../..
+bun run build single github  # Test with GitHub server
+bun run build single slack   # Test with Slack server
+
+# Verify all servers still work
+bun run build all
+```
+
+**Important considerations:**
+- ⚠️ **Backward compatibility:** SDK changes must not break existing servers
+- ⚠️ **TypeScript exports:** Update exports in `packages/sdk/src/lib.ts`
+- ⚠️ **Documentation:** Update `docs/ai-context/sdk-usage.md` with new features
+- ⚠️ **Version bumping:** SDK version changes require updating dependent servers
+
+### Contributing to Shared Packages
+
+The `packages/` directory contains 12 shared utility packages that support the build system, manifest handling, and development tools. These packages are used internally by the project infrastructure.
+
+**Core packages:**
+
+| Package | Purpose | Key Exports |
+|---------|---------|-------------|
+| **@metorial/mcp-server-sdk** | Server implementation framework | `metorial.createServer`, `ResourceTemplate` |
+| **@metorial-mcp-containers/manifest** | Manifest reading and validation | `readManifest`, `getAllServers`, `manifestSchema` |
+| **@metorial-mcp-containers/nixpacks** | Build system utilities | `nixpacksBuild`, `getContainerName` |
+
+**When to contribute to packages:**
+- Improving build system reliability or performance
+- Adding manifest validation or schema enhancements
+- Creating new utilities for development workflows
+- Fixing bugs in existing package functionality
+- Adding features that scripts or build system need
+
+**Package contribution workflow:**
+
+```bash
+# Navigate to the package
+cd packages/<package-name>
+
+# Install dependencies
+bun install
+
+# Make your changes
+# Edit src/ files
+
+# Test the package
+bun test  # if tests exist
+
+# Verify integration
+cd ../..
+bun run build single <test-server>  # Test with a real server
+```
+
+**Package structure:**
+```
+packages/
+├── sdk/                 # Server SDK
+│   ├── src/
+│   │   └── lib.ts       # Main exports
+│   ├── package.json
+│   └── tsconfig.json
+├── manifest/            # Manifest utilities
+│   ├── src/
+│   │   └── types/
+│   │       └── schema.ts
+│   └── package.json
+└── nixpacks/            # Build utilities
+    ├── src/
+    └── package.json
+```
+
+**Testing package changes:**
+1. **Unit tests:** Run package-specific tests if they exist
+2. **Integration tests:** Use `bun run build` commands to verify the build system still works
+3. **Version checks:** Run `bun run check-versions` to ensure workspace consistency
+
+**Considerations:**
+- 📦 **Workspace dependencies:** Packages use Yarn workspaces, changes affect all dependent packages
+- 📦 **Version management:** Keep versions synchronized across workspace
+- 📦 **Breaking changes:** Coordinate breaking changes with scripts and servers that use the package
+
+### Contributing to Scripts
+
+The `scripts/` directory contains development automation tools that power the project's CLI commands. These are sophisticated TypeScript programs that handle server creation, building, and validation.
+
+**Available scripts:**
+
+| Script | Command | Purpose |
+|--------|---------|---------|
+| **add-server** | `bun add-server` | Interactive wizard for adding new servers |
+| **build** | `bun run build` | Build servers to Docker containers |
+| **check-versions** | `bun run check-versions` | Verify version consistency |
+| **import** | `bun run import` | Import third-party MCP servers to catalog |
+| **index** | `bun run index` | Generate catalog index |
+
+**When to contribute to scripts:**
+- Improving user experience of interactive wizards
+- Adding new automation commands
+- Enhancing build process reliability
+- Adding validation or error checking
+- Improving output formatting or logging
+
+**Script contribution workflow:**
+
+```bash
+# Navigate to the script
+cd scripts/<script-name>
+
+# Understand current implementation
+cat src/index.ts
+
+# Make your changes
+# Edit src/ files
+
+# Test the script locally
+bun run src/index.ts <args>
+
+# Or test via the project command
+cd ../..
+bun <command>  # e.g., bun add-server
+```
+
+**Script structure:**
+```
+scripts/
+├── add-server/
+│   ├── src/
+│   │   └── index.ts     # Main script logic
+│   ├── package.json
+│   └── tsconfig.json
+├── build/
+│   ├── src/
+│   │   └── index.ts
+│   └── package.json
+└── ...
+```
+
+**Common script patterns:**
+- **CLI framework:** Uses `sade` for command-line argument parsing
+- **Interactive prompts:** Uses prompt libraries for user input
+- **File system operations:** Uses `fs-extra` for file manipulation
+- **Build integration:** Calls Nixpacks and Docker programmatically
+
+**Example script enhancement:**
+
+```typescript
+// Adding validation to add-server script
+import { z } from 'zod';
+
+const serverNameSchema = z.string()
+  .min(3, 'Server name must be at least 3 characters')
+  .regex(/^[a-z0-9-]+$/, 'Use lowercase letters, numbers, and hyphens only');
+
+// Use in validation
+const name = await promptForName();
+const validation = serverNameSchema.safeParse(name);
+if (!validation.success) {
+  console.error(validation.error.message);
+  process.exit(1);
+}
+```
+
+**Testing script changes:**
+```bash
+# Test the specific script
+cd scripts/add-server
+bun run src/index.ts
+
+# Test through project command
+cd ../..
+bun add-server
+
+# Verify it works end-to-end
+# Follow prompts and ensure server is created correctly
+```
+
+**Considerations:**
+- 🔧 **Error handling:** Scripts should provide clear error messages
+- 🔧 **User experience:** Interactive prompts should be intuitive
+- 🔧 **Validation:** Validate user input before processing
+- 🔧 **Idempotency:** Scripts should be safe to run multiple times
+
+### Contributing to Catalog Management
+
+The `catalog/` directory contains configurations for 408 indexed third-party MCP servers. Catalog contributions involve adding, updating, or organizing server manifests.
+
+**Catalog structure:**
+```
+catalog/
+├── index.json           # Master index of all servers
+├── server-name-1/
+│   ├── manifest.json    # Server configuration
+│   └── README.md        # Optional documentation
+├── server-name-2/
+│   └── manifest.json
+└── ...
+```
+
+**When to contribute to catalog:**
+- Adding third-party MCP servers from the community
+- Updating server manifests with new versions
+- Improving server metadata (descriptions, tags)
+- Organizing catalog structure
+- Fixing broken or outdated server configurations
+
+**Catalog contribution workflow:**
+
+| Step | Action | Command |
+|------|--------|---------|
+| **1. Import server** | Use import script to add external server | `bun run import <repo-url>` |
+| **2. Verify manifest** | Ensure manifest.json is valid | Review `catalog/<server-id>/manifest.json` |
+| **3. Test build** | Verify server builds successfully | `bun run build single <server-id>` |
+| **4. Update index** | Regenerate catalog index | `bun run index` (if script exists) |
+| **5. Documentation** | Add README if needed | Create `catalog/<server-id>/README.md` |
+
+**Manifest schema:**
+
+Every server in the catalog must have a valid `manifest.json`:
+
+```json
+{
+  "name": "server-name",
+  "version": "1.0.0",
+  "description": "What the server does",
+  "runtime": "typescript.deno",
+  "repository": "https://github.com/author/repo",
+  "author": "Author Name",
+  "license": "MIT"
+}
+```
+
+**Adding a third-party server manually:**
+
+```bash
+# Create directory for the server
+mkdir -p catalog/new-server
+
+# Create manifest.json
+cat > catalog/new-server/manifest.json << 'EOF'
+{
+  "name": "new-server",
+  "version": "1.0.0",
+  "description": "Description of the server",
+  "runtime": "typescript.deno",
+  "repository": "https://github.com/author/repo"
+}
+EOF
+
+# Test the build
+bun run build single new-server
+
+# Update catalog index
+bun run index  # if index script exists
+```
+
+**Catalog validation:**
+```bash
+# Validate all manifests
+find catalog -name "manifest.json" -exec cat {} \;
+
+# Check for required fields
+grep -r "\"name\"" catalog/*/manifest.json
+grep -r "\"runtime\"" catalog/*/manifest.json
+
+# Verify builds
+bun run build all
+```
+
+**Considerations:**
+- 📚 **License compliance:** Ensure third-party servers have compatible licenses
+- 📚 **Version tracking:** Keep track of upstream version changes
+- 📚 **Maintenance:** Monitor for broken builds or deprecated servers
+- 📚 **Attribution:** Always credit original authors
+
+### Advanced Contribution Best Practices
+
+When working on infrastructure (SDK, packages, scripts, or catalog):
+
+**Before making changes:**
+- ✅ Understand the impact on existing servers and workflows
+- ✅ Review related documentation in `docs/ai-context/`
+- ✅ Check existing patterns in similar code
+- ✅ Consider backward compatibility
+
+**During development:**
+- ✅ Test changes with multiple existing servers
+- ✅ Verify `bun run build all` still works
+- ✅ Update TypeScript types if modifying interfaces
+- ✅ Add comments for complex logic
+
+**Before submitting:**
+- ✅ Run `bun run check-versions` for dependency changes
+- ✅ Update relevant documentation
+- ✅ Test end-to-end workflows
+- ✅ Verify no breaking changes unless intentional
+
+**Documentation updates:**
+- Update `docs/ai-context/` for architectural changes
+- Update `CLAUDE.md` for workflow changes
+- Update `PROJECT_INDEX.md` if structure changes
+- Add inline code comments for complex logic
+
+### Getting Help with Advanced Contributions
+
+Advanced contributions benefit from discussion before implementation:
+
+**Before starting:**
+1. **Open an issue** to discuss your proposed changes
+2. **Tag maintainers** for feedback on approach
+3. **Share your plan** to ensure alignment with project goals
+
+**During development:**
+1. **Ask questions** in issue comments
+2. **Share work-in-progress** for early feedback
+3. **Document assumptions** you're making
+
+**For complex changes:**
+1. **Break into smaller PRs** when possible
+2. **Provide detailed PR descriptions** explaining the why
+3. **Include examples** of how changes will be used
+
 ## Debugging and Troubleshooting
 
 This section covers common issues you may encounter while developing MCP servers and their solutions. For build-specific issues, also see the **[Troubleshooting Builds](#troubleshooting-builds)** section above.

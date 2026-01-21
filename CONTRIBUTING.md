@@ -88,7 +88,119 @@ bun run build single my-new-server
 # If build succeeds, test the functionality
 ```
 
-### 3. Testing Your Changes
+### 3. Testing Your Server Locally
+
+Thorough testing is essential before submitting your changes. The Metorial platform provides multiple ways to test your server implementation.
+
+#### Building Your Server
+
+The primary way to test your server is to build it using Nixpacks and Docker:
+
+```bash
+# Build a specific server
+bun run build single <serverId>
+
+# Build all servers (useful for ensuring no breaking changes)
+bun run build all
+```
+
+**What happens during build:**
+- Nixpacks analyzes your project structure and dependencies
+- A Docker image is generated with the appropriate runtime environment
+- Dependencies are installed based on your package manager
+- Build scripts are executed if defined in your configuration
+- The resulting container is validated for MCP compatibility
+
+**Common build issues and solutions:**
+
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| Build fails with "command not found" | Missing runtime dependency | Add to `build.aptPkgs` or `build.nixPkgs` in metorial.json |
+| Module import errors | Incorrect runtime specified | Verify `runtime` field matches your code (typescript.deno vs typescript.node) |
+| Build succeeds but container fails to start | Missing environment setup | Check `build.installCmd` and `build.startCmd` configuration |
+| Version mismatch errors | Outdated dependencies | Run `bun run check-versions` to verify package versions |
+
+#### Testing with Docker Locally
+
+Once your server builds successfully, you can test the container directly with Docker:
+
+```bash
+# Build the server first
+bun run build single my-server
+
+# Find the built image
+docker images | grep my-server
+
+# Run the container interactively
+docker run -it <image-id> /bin/bash
+
+# Or test the MCP server directly with environment variables
+docker run -e CONFIG_VAR=value <image-id>
+```
+
+**Testing checklist:**
+- ✅ Container starts without errors
+- ✅ All required dependencies are available inside the container
+- ✅ Environment variables are properly passed through
+- ✅ MCP server responds to standard MCP protocol messages
+- ✅ Tools and resources are registered correctly
+
+#### Using the Test Build Feature
+
+The `add-server` script includes an automatic test build feature that validates your configuration:
+
+**During initial setup:**
+```bash
+bun add-server
+# Follow prompts...
+# Script automatically runs test build
+# ✅ Build successful! Your server configuration is valid.
+```
+
+**Manual test build after changes:**
+```bash
+# After modifying your server code or configuration
+bun run build single <serverId>
+
+# Review the build output for any warnings or errors
+# Fix issues and rebuild until successful
+```
+
+**What the test build validates:**
+- ✅ `metorial.json` or `manifest.json` schema is valid
+- ✅ Repository structure matches expected layout
+- ✅ Runtime dependencies can be resolved
+- ✅ Build commands execute successfully
+- ✅ Container image is created without errors
+- ✅ Server entry point is accessible
+
+**Debugging failed test builds:**
+
+1. **Check build output:** The build process provides detailed logs about what went wrong
+   ```bash
+   bun run build single my-server 2>&1 | tee build.log
+   ```
+
+2. **Validate configuration:** Ensure your `metorial.json` follows the schema
+   ```bash
+   # Reference the schema documentation
+   cat docs/metorial-json-schema.md
+   ```
+
+3. **Inspect the Nixpacks plan:** See what Nixpacks detected
+   ```bash
+   cd servers/my-server
+   nixpacks plan .
+   ```
+
+4. **Test dependencies locally:** Verify your code works outside Docker
+   ```bash
+   cd servers/my-server
+   bun install
+   bun run server.ts  # or your entry point
+   ```
+
+### 4. Testing Your Changes
 
 Before committing, ensure your changes work correctly:
 
@@ -96,14 +208,15 @@ Before committing, ensure your changes work correctly:
 - ✅ Run `bun run build single <serverId>` and verify it completes successfully
 - ✅ Check that the server appears in `catalog/` with correct manifest
 - ✅ Verify all required fields in `metorial.json` are present
-- ✅ Test the server container locally (if possible)
+- ✅ Test the server container locally using Docker (see section 3 above)
+- ✅ Confirm all tools and resources work as expected
 
 **For other changes:**
 - ✅ Run relevant build commands to ensure nothing breaks
 - ✅ Test the affected functionality
 - ✅ Verify no unintended side effects
 
-### 4. Commit Guidelines
+### 5. Commit Guidelines
 
 Write clear, descriptive commit messages:
 

@@ -245,6 +245,114 @@ git commit -m "chore: Update dependencies"
 - Write descriptive messages (not just "fix" or "update")
 - Reference issue numbers if applicable: `fix: Resolve #123 - OAuth token refresh`
 
+### 6. Code Style and Formatting
+
+This project uses automated code formatting and linting to maintain consistency across the codebase. All contributions should follow these standards.
+
+#### Prettier Configuration
+
+We use [Prettier](https://prettier.io/) for code formatting with the following configuration:
+
+```json
+{
+  "singleQuote": true,
+  "semi": true,
+  "printWidth": 95,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "useTabs": false
+}
+```
+
+**Key formatting rules:**
+- **Single quotes** for strings (e.g., `'hello'` not `"hello"`)
+- **Semicolons** required at end of statements
+- **95 character** line width limit
+- **2 spaces** for indentation (no tabs)
+- **No trailing commas** in objects/arrays
+- **Arrow function parentheses** omitted when possible: `x => x + 1`
+
+**Running Prettier:**
+```bash
+# Format all files
+bun run format
+
+# Check formatting without changing files
+bun run format:check
+```
+
+#### Markdown Linting
+
+We use [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) to enforce consistent markdown formatting across documentation.
+
+**Key markdown rules:**
+- **ATX-style headings** (use `# Heading` not underlined headings)
+- **Dash-style lists** (use `- item` not `* item`)
+- **2-space list indentation**
+- **No trailing whitespace**
+- **No hard tabs** (use spaces)
+- **Single blank lines** only (no multiple consecutive blank lines)
+- **Fenced code blocks** with language specified when applicable
+- **Files end with single newline**
+
+**Running markdown linting:**
+```bash
+# Lint all markdown files
+bun run lint:md
+
+# Auto-fix markdown issues where possible
+bun run lint:md:fix
+```
+
+**Common markdown patterns:**
+
+````markdown
+# Use ATX-style headings
+## Second level
+### Third level
+
+- Use dashes for lists
+- Indent nested lists by 2 spaces
+  - Like this
+  - And this
+
+```bash
+# Always specify language for code blocks
+npm install
+```
+
+**Bold text** uses asterisks, not underscores.
+*Italic text* also uses asterisks.
+````
+
+**Files excluded from linting:**
+- `catalog/**/*.md` - Third-party MCP server documentation
+- `node_modules/**` - Dependencies
+- Build artifacts in `build/` and `dist/`
+
+#### Before Committing
+
+Ensure your code passes all formatting and linting checks:
+
+```bash
+# Run all checks
+bun run format:check  # Check Prettier formatting
+bun run lint:md       # Check markdown linting
+
+# Auto-fix issues
+bun run format        # Fix code formatting
+bun run lint:md:fix   # Fix markdown issues
+```
+
+**Pre-commit checklist:**
+- ✅ Code follows Prettier formatting rules
+- ✅ Markdown files pass markdownlint checks
+- ✅ No trailing whitespace or hard tabs
+- ✅ All files end with a single newline
+- ✅ Imports and code structure follow project patterns
+
 ## Before You Submit
 
 1. Make sure your code follows any existing conventions and structure.

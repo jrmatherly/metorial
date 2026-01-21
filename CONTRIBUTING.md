@@ -587,6 +587,137 @@ interface Config {
 
 **Consistency is key:** Following these conventions ensures your server integrates seamlessly with the existing ecosystem and provides a predictable experience for users.
 
+## Debugging and Troubleshooting
+
+This section covers common issues you may encounter while developing MCP servers and their solutions. For build-specific issues, also see the **[Troubleshooting Builds](#troubleshooting-builds)** section above.
+
+### Common Issues and Solutions
+
+| Issue | Likely Cause | Solution |
+|-------|--------------|----------|
+| **Server not appearing in catalog** | Manifest not generated or invalid | Run `bun add-server` again, verify `catalog/<server-id>/manifest.json` exists |
+| **"Module not found" errors** | Missing dependency or incorrect import | Check `package.json`, run `bun install`, verify import paths match actual file locations |
+| **OAuth flow not working** | Incorrect redirect URI or missing scopes | Verify `redirectUri` in `setOauthHandler()` matches your OAuth app settings, check required scopes |
+| **Server starts but tools not appearing** | Tools not registered or schema errors | Check `registerTool()` calls, validate `inputSchema` follows JSON Schema format |
+| **Resource templates not working** | Invalid template syntax | Review `.claude/rules/servers.md` for template syntax, use `{variable}` format |
+| **Environment variables not available** | Not passed to container | Check Docker run command includes `-e VAR=value`, verify variable names in config |
+| **"Permission denied" errors** | File permissions or Docker access | Check file permissions with `ls -la`, ensure Docker daemon is running |
+| **Type errors in TypeScript** | Runtime mismatch or missing types | Verify `runtime` in `metorial.json`, check SDK import: `import { ... } from '@metorial/mcp-server-sdk'` |
+| **Container exits immediately** | Entry point error or missing dependencies | Check `build.startCmd` points to correct file, review Docker logs: `docker logs <container-id>` |
+| **Rate limiting or API errors** | API configuration or quota issues | Verify API keys/tokens are valid, check API provider's rate limits and quotas |
+| **Local test works, container fails** | Environment differences | Ensure all dependencies in `package.json`, check for hardcoded paths, verify runtime matches |
+| **Workspace dependency errors** | Version mismatch across packages | Run `bun run check-versions`, update versions in `package.json` to match workspace |
+
+### Debugging Workflow
+
+When you encounter an issue, follow this systematic debugging approach:
+
+**1. Identify the failure point:**
+```bash
+# Check which stage is failing
+bun run build single <serverId>    # Build stage
+docker run <image-id>               # Runtime stage
+bun run server.ts                   # Local execution
+```
+
+**2. Gather diagnostic information:**
+```bash
+# View detailed build logs
+bun run build single <serverId> 2>&1 | tee debug.log
+
+# Inspect Nixpacks detection
+cd servers/<server-name>
+nixpacks plan .
+
+# Check Docker container logs
+docker ps -a                        # Find container ID
+docker logs <container-id>          # View logs
+docker inspect <container-id>       # View configuration
+```
+
+**3. Isolate the problem:**
+```bash
+# Test dependencies locally
+cd servers/<server-name>
+bun install
+bun run server.ts
+
+# Verify configuration
+cat metorial.json                   # Check syntax and values
+cat package.json                    # Verify dependencies
+
+# Test inside container
+docker run -it <image-id> /bin/bash
+# Then run commands manually inside container
+```
+
+**4. Common fixes:**
+
+| Symptom | Diagnostic Command | Typical Fix |
+|---------|-------------------|-------------|
+| Build fails | `nixpacks plan .` | Add missing dependencies to `package.json` |
+| Import errors | `bun run server.ts` | Fix import paths or add missing packages |
+| Container crashes | `docker logs <id>` | Update `build.startCmd` or add runtime dependencies |
+| Missing tools | Test MCP protocol | Check `registerTool()` calls and schemas |
+| Configuration errors | `cat metorial.json` | Validate against schema in `docs/metorial-json-schema.md` |
+
+### Getting Help
+
+If you're still stuck after trying these solutions:
+
+**1. Search existing issues:**
+```bash
+# Check if someone else had the same problem
+https://github.com/metorial/mcp-containers/issues
+```
+
+**2. Gather information for your issue report:**
+- Error messages (full output)
+- Build logs (`bun run build single <serverId> 2>&1 | tee build.log`)
+- Your `metorial.json` configuration
+- Your `package.json` dependencies
+- Steps to reproduce the issue
+- Expected vs actual behavior
+
+**3. Create a detailed issue:**
+- Use a descriptive title: "Build fails with 'command not found' for postgresql"
+- Include all diagnostic information from step 2
+- Describe what you've already tried
+- Tag with appropriate labels (e.g., `bug`, `build-system`, `documentation`)
+
+**4. Ask for clarification:**
+- If documentation is unclear, ask for improvements
+- If error messages are confusing, request better error handling
+- If you're unsure about best practices, ask for guidance
+
+### Quick Reference: Common Commands
+
+Keep these commands handy for quick troubleshooting:
+
+```bash
+# Development
+bun install                         # Install/update dependencies
+bun add-server                      # Interactive server creation
+bun run build single <serverId>     # Build specific server
+bun run build all                   # Build all servers
+
+# Validation
+bun run check-versions              # Verify package versions
+bun run format:check                # Check code formatting
+bun run lint:md                     # Check markdown formatting
+
+# Debugging
+nixpacks plan .                     # Show detected build plan (run in server directory)
+docker images                       # List built images
+docker ps -a                        # List all containers
+docker logs <container-id>          # View container logs
+docker run -it <image-id> /bin/bash # Debug inside container
+
+# Cleanup
+docker system prune                 # Remove unused containers/images
+rm -rf node_modules && bun install  # Fresh dependency install
+```
+
 ## Before You Submit
 
 1. Make sure your code follows any existing conventions and structure.

@@ -137,3 +137,7 @@ dist
 
 # Auto Claude data directory
 .auto-claude/
+.plandex-v2/
+.claude_settings.json
+.auto-claude-security.json
+.auto-claude-status

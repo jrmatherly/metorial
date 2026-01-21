@@ -720,17 +720,125 @@ rm -rf node_modules && bun install  # Fresh dependency install
 
 ## Before You Submit
 
-1. Make sure your code follows any existing conventions and structure.
-2. Double-check that your server shows up correctly in the `catalog/` folder.
-3. Run the build and fix any errors or warnings.
-4. Commit your changes with a clear message:
-   ```bash
-   git commit -m "Add new MCP server: <name>"
-   ```
-5. Push your branch to your fork:
-   ```bash
-   git push origin your-branch-name
-   ```
+Before submitting your pull request, complete this comprehensive checklist to ensure your contribution meets project standards and is ready for review.
+
+### Pre-Submission Checklist
+
+Use this checklist to verify your changes are complete and ready for submission:
+
+#### 1. Code Quality and Conventions
+
+| Check | Description | Command |
+|-------|-------------|---------|
+| ✅ **Naming conventions** | Tool names use snake_case, resources use kebab-case, config keys use camelCase | Review code manually |
+| ✅ **Project patterns** | Code follows existing patterns from similar servers | Compare with reference servers in `servers/` |
+| ✅ **No debugging code** | Remove console.log, print statements, or debugging artifacts | `grep -r "console.log" servers/<name>/` |
+| ✅ **Error handling** | Proper error handling for API calls and edge cases | Review try-catch blocks and error responses |
+| ✅ **TypeScript types** | Interfaces defined, no `any` types without justification | Check for type safety |
+
+#### 2. Build and Testing
+
+| Check | Description | Command |
+|-------|-------------|---------|
+| ✅ **Build succeeds** | Server builds without errors | `bun run build single <serverId>` |
+| ✅ **No warnings** | Build completes without warnings or can explain necessary warnings | Review build output |
+| ✅ **Container runs** | Container starts successfully | `docker run <image-id>` |
+| ✅ **Local testing** | Server works correctly outside container | `cd servers/<name> && bun run server.ts` |
+| ✅ **Dependencies** | All dependencies listed in package.json | Verify imports match dependencies |
+
+#### 3. Configuration and Manifest
+
+| Check | Description | Command |
+|-------|-------------|---------|
+| ✅ **metorial.json valid** | Configuration follows schema | Compare against `docs/metorial-json-schema.md` |
+| ✅ **Runtime correct** | Runtime matches implementation (typescript.deno/node/python) | Check `runtime` field |
+| ✅ **Manifest generated** | Server appears in catalog with valid manifest | `cat catalog/<server-id>/manifest.json` |
+| ✅ **Required fields** | All required fields present (name, version, description) | Review manifest completeness |
+
+#### 4. Code Formatting
+
+| Check | Description | Command |
+|-------|-------------|---------|
+| ✅ **Prettier formatted** | Code follows Prettier rules | `bun run format:check` |
+| ✅ **Markdown linted** | Documentation passes markdownlint | `bun run lint:md` |
+| ✅ **No trailing whitespace** | Files have no trailing whitespace or hard tabs | Automatic with formatters |
+| ✅ **Single newline at EOF** | All files end with single newline | Automatic with formatters |
+
+#### 5. Documentation
+
+| Check | Description | Verification |
+|-------|-------------|--------------|
+| ✅ **README (if needed)** | Custom servers include README if complex | Check `servers/<name>/README.md` |
+| ✅ **Inline comments** | Complex logic has explanatory comments | Review code clarity |
+| ✅ **Config documented** | Configuration options documented if not obvious | Check interface comments |
+| ✅ **OAuth documented** | OAuth scopes and setup documented if applicable | Review OAuth handler |
+
+#### 6. Git and Commits
+
+| Check | Description | Example |
+|-------|-------------|---------|
+| ✅ **Clear commit messages** | Commits follow type: description format | `feat: Add Stripe MCP server` |
+| ✅ **Focused commits** | Each commit represents a single logical change | Review commit history |
+| ✅ **No merge commits** | Branch rebased if needed | `git rebase main` |
+| ✅ **Feature branch** | Working on dedicated branch | `add-<server-name>-server` |
+
+#### 7. Final Validation
+
+Before pushing, run these commands to catch any remaining issues:
+
+```bash
+# Format all code
+bun run format
+
+# Fix markdown issues
+bun run lint:md:fix
+
+# Verify build succeeds
+bun run build single <serverId>
+
+# Check package versions (if you modified dependencies)
+bun run check-versions
+```
+
+### Quick Pre-Submit Commands
+
+Run this sequence before submitting:
+
+```bash
+# Auto-fix formatting issues
+bun run format
+bun run lint:md:fix
+
+# Validate build
+bun run build single <serverId>
+
+# Commit with clear message
+git add .
+git commit -m "feat: Add <server-name> MCP server"
+
+# Push to your fork
+git push origin your-branch-name
+```
+
+### Common Pre-Submission Issues
+
+| Issue | How to Fix |
+|-------|-----------|
+| Build fails | Review build logs, check dependencies, verify runtime configuration |
+| Formatting errors | Run `bun run format` and `bun run lint:md:fix` |
+| Missing from catalog | Re-run `bun add-server` or manually verify manifest exists |
+| Type errors | Check imports from `@metorial/mcp-server-sdk`, verify runtime matches code |
+| Container fails to start | Verify `build.startCmd`, test locally first, check Docker logs |
+
+### If Your Checklist is Incomplete
+
+**Don't worry!** It's better to:
+- Submit with known issues clearly documented in PR description
+- Ask for help in the PR comments
+- Iterate based on reviewer feedback
+
+**Example PR note:**
+> Note: Build succeeds but I'm not sure if my OAuth scope configuration is optimal. Looking for feedback on the `setOauthHandler()` setup.
 
 ## Opening a Pull Request
 

@@ -1,0 +1,4 @@
+{
+  "name": "SERVER_DISPLAY_NAME",
+  "runtime": "typescript.deno"
+}

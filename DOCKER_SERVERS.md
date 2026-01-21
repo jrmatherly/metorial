@@ -7,7 +7,7 @@
 
 > [!TIP]
 > *Hosted MCP Containers:* Skip the local setup and go hosted. [Metorial's](https://metorial.com) serverless MCP enables you to integrate the MCP servers listed in this repo in a single line of code. Built for devs; with logging, monitoring and SDKs included.
-> 
+>
 > ➡️ **[Get Early Access (with free tier)](https://metorial.com/early-access)**
 
 ## Features
@@ -18,19 +18,19 @@
 
 ## Motivation
 
-While experimenting with Model Context Protocol (MCP) servers, we found that setting them up could be a bit tedious and time-consuming. 
+While experimenting with Model Context Protocol (MCP) servers, we found that setting them up could be a bit tedious and time-consuming.
 To simplify the process, we created containerized versions of these servers—making it quick, easy, and secure for anyone to get started.
 
-This repository contains the scripts we use to build and manage these containers using [Nixpacks](https://nixpacks.com). 
-New images are automatically built whenever changes are made to the corresponding server repositories, 
+This repository contains the scripts we use to build and manage these containers using [Nixpacks](https://nixpacks.com).
+New images are automatically built whenever changes are made to the corresponding server repositories,
 ensuring that our containers are always up-to-date.
 
-We're committed to supporting as many MCP servers as possible. 
+We're committed to supporting as many MCP servers as possible.
 If there's a specific server you'd like to see included, feel free to open an issue or submit a pull request!
 
 ## Usage
 
-To use the containers, simply pull the Docker image for the server you want to use. 
+To use the containers, simply pull the Docker image for the server you want to use.
 We have provided a list of available servers below, along with their respective readme files.
 
 ## Featured Servers
@@ -178,7 +178,6 @@ We have provided a list of available servers below, along with their respective 
 
 - <img src="https://github.com/yamadashy.png?size=120" width="12px" height="12px" /> **[Repomix MCP Server
 ](catalog/yamadashy/repomix/repomix/README.md)** - Pack your codebase into AI-friendly formats
-
 
 ## Available Servers
 
@@ -1406,11 +1405,10 @@ We have provided a list of available servers below, along with their respective 
 - <img src="https://github.com/zxkane.png?size=120" width="12px" height="12px" /> **[Amazon Bedrock MCP Server
 ](catalog/zxkane/mcp-server-amazon-bedrock/mcp-server-amazon-bedrock/README.md)** - A Model Control Protocol (MCP) server that integrates with Amazon Bedrock's Nova Canvas model for AI image generation.
 
-
 # License
 
-The code of this project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
-The source code of the containers is licensed under the respective licenses of the projects. 
+The code of this project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+The source code of the containers is licensed under the respective licenses of the projects.
 See the linked project repositories for more information.
 
 ## Contributing

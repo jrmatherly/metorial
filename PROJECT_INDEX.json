@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "metorial-mcp-containers",
+  "description": "Pre-built MCP (Model Context Protocol) servers in Docker containers",
+  "version": "1.0.0",
+  "generated": "2026-01-21",
+  "organization": {
+    "name": "Metorial",
+    "funding": "YC F25",
+    "url": "https://metorial.com"
+  },
+  "structure": {
+    "servers": {
+      "path": "servers/",
+      "description": "Custom MCP server implementations",
+      "count": 33,
+      "examples": ["github", "slack", "notion", "stripe", "gmail"]
+    },
+    "catalog": {
+      "path": "catalog/",
+      "description": "Indexed third-party MCP servers",
+      "count": 408,
+      "indexFile": "catalog/index.json"
+    },
+    "packages": {
+      "path": "packages/",
+      "description": "Shared utility packages",
+      "count": 12,
+      "core": [
+        {
+          "name": "@metorial/mcp-server-sdk",
+          "path": "packages/sdk",
+          "exports": [
+            "metorial.createServer",
+            "metorial.setOauthHandler",
+            "ResourceTemplate",
+            "z"
+          ]
+        },
+        {
+          "name": "@metorial-mcp-containers/manifest",
+          "path": "packages/manifest",
+          "exports": [
+            "readManifest",
+            "getAllServers",
+            "getLatestServerVersion",
+            "manifestSchema"
+          ]
+        },
+        {
+          "name": "@metorial-mcp-containers/nixpacks",
+          "path": "packages/nixpacks",
+          "exports": ["nixpacksBuild", "getContainerName"]
+        }
+      ]
+    },
+    "scripts": {
+      "path": "scripts/",
+      "description": "Development automation",
+      "count": 5,
+      "commands": {
+        "add-server": "scripts/add-server/src/index.ts",
+        "build": "scripts/build/src/index.ts",
+        "check-versions": "scripts/check-versions/src/index.ts",
+        "import": "scripts/import/src/index.ts",
+        "index": "scripts/index/src/index.ts"
+      }
+    }
+  },
+  "entryPoints": {
+    "addServer": {
+      "command": "bun add-server",
+      "file": "scripts/add-server/src/index.ts",
+      "description": "Interactive CLI wizard for adding new MCP servers"
+    },
+    "build": {
+      "command": "bun run build",
+      "file": "scripts/build/src/index.ts",
+      "description": "Build servers to Docker containers",
+      "subcommands": {
+        "single": "bun run build single <serverId> [version]",
+        "all": "bun run build all",
+        "prepare": "bun run build prepare <serverId> --out <dir>",
+        "ci": "bun run build ci <serverId> <version> --platform <platform>",
+        "ci-publish": "bun run build ci-publish <serverId> <version>"
+      }
+    },
+    "checkVersions": {
+      "command": "bun run check-versions",
+      "file": "scripts/check-versions/src/index.ts",
+      "description": "Verify server version consistency"
+    }
+  },
+  "serverPattern": {
+    "requiredFiles": ["server.ts", "metorial.json", "package.json", "tsconfig.json"],
+    "metorialJson": {
+      "name": "string (server name)",
+      "runtime": "typescript.deno | typescript.node | python"
+    },
+    "conventions": {
+      "toolNames": "snake_case",
+      "resourceNames": "kebab-case",
+      "configKeys": "camelCase"
+    }
+  },
+  "dependencies": {
+    "runtime": "bun",
+    "packageManager": "yarn workspaces (via bun)",
+    "containerization": ["docker", "nixpacks"],
+    "coreLibraries": ["@modelcontextprotocol/sdk", "zod", "sade", "fs-extra"]
+  },
+  "documentation": {
+    "primary": ["CLAUDE.md", "AGENTS.md", "PROJECT_INDEX.md"],
+    "aiContext": [
+      "docs/ai-context/context-loading-strategy.md",
+      "docs/ai-context/sdk-usage.md",
+      "docs/ai-context/build-system.md",
+      "docs/ai-context/catalog.md"
+    ],
+    "rules": [
+      ".claude/rules/servers.md",
+      ".claude/rules/packages.md",
+      ".claude/rules/catalog.md",
+      ".claude/rules/scripts.md"
+    ],
+    "agents": [
+      ".claude/agents/mcp-server-expert.md",
+      ".claude/agents/sdk-expert.md",
+      ".claude/agents/build-expert.md",
+      ".claude/agents/catalog-expert.md"
+    ],
+    "skills": [
+      ".claude/skills/add-server/SKILL.md",
+      ".claude/skills/debug-server/SKILL.md",
+      ".claude/skills/build-server/SKILL.md"
+    ]
+  },
+  "containerNaming": {
+    "pattern": "ghcr.io/metorial/mcp-<serverId>:<version>",
+    "example": "ghcr.io/metorial/mcp-github:1.0.0"
+  },
+  "quickCommands": {
+    "build": "bun run build single <serverId>",
+    "addServer": "bun add-server",
+    "checkVersions": "bun run check-versions",
+    "getLatestVersion": "bun run build get-latest-version <serverId>",
+    "listCatalog": "jq '.' catalog/index.json"
+  }
+}

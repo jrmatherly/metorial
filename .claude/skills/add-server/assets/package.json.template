@@ -1,0 +1,12 @@
+{
+  "name": "@metorial-mcp-containers/SERVER_ID",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@metorial/mcp-server-sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

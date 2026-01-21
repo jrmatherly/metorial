@@ -1,6 +1,6 @@
 # Contributing Guide
 
-First off — thank you for your interest in contributing to this project!  
+First off — thank you for your interest in contributing to this project!
 We welcome contributions from everyone and truly appreciate your help in improving our MCP container system or adding new MCP containers.
 
 ## What Can You Contribute?
@@ -217,7 +217,7 @@ For detailed configuration options, see the **[metorial.json Schema Documentatio
 
 Follow these steps to get your environment ready and contribute:
 
-1. **Fork this repository**  
+1. **Fork this repository**
    Click the "Fork" button at the top right of the repo page to create your own copy.
 
 2. **Clone your fork**

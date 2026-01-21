@@ -18,6 +18,201 @@ Before getting started, please make sure you have the following installed:
 
 Make sure `docker` and `nixpacks` are accessible from your command line after installation.
 
+## Build Process
+
+The Metorial MCP Containers project uses a sophisticated build system that combines **Nixpacks** and **Docker** to automatically containerize MCP servers without requiring manual Dockerfile creation. Understanding this process will help you troubleshoot issues and optimize your server configuration.
+
+### Architecture Overview
+
+```
+┌─────────────────┐
+│  metorial.json  │ ← Server configuration
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│    Nixpacks     │ ← Analyzes project, generates build plan
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│     Docker      │ ← Builds container image
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  MCP Container  │ ← Ready to run MCP server
+└─────────────────┘
+```
+
+### How It Works
+
+**Step 1: Configuration Analysis**
+
+The build system reads your server's configuration from `metorial.json` (for custom servers) or `manifest.json` (for catalog servers). This file specifies:
+
+| Configuration | Purpose | Example |
+|---------------|---------|---------|
+| **runtime** | Execution environment | `typescript.deno`, `typescript.node`, `python` |
+| **build.installCmd** | Custom dependency installation | `bun install --production` |
+| **build.startCmd** | Container entry point | `bun run server.ts` |
+| **build.aptPkgs** | System packages (apt) | `["git", "curl"]` |
+| **build.nixPkgs** | Nix packages | `["postgresql"]` |
+
+**Step 2: Nixpacks Analysis**
+
+Nixpacks automatically detects your project structure and generates an optimized build plan:
+
+- **Detects package manager:** Identifies `package.json`, `requirements.txt`, `Cargo.toml`, etc.
+- **Determines runtime:** Selects appropriate Node.js, Python, Deno, or other runtime versions
+- **Analyzes dependencies:** Reads lockfiles to ensure reproducible builds
+- **Generates providers:** Creates provider chain (e.g., Node.js → Bun → TypeScript)
+
+**Step 3: Docker Image Build**
+
+Docker builds the container image using the Nixpacks-generated plan:
+
+1. **Base image selection:** Pulls appropriate base image for the runtime
+2. **Dependency installation:** Runs install commands with caching for faster rebuilds
+3. **Code copying:** Adds your server implementation to the container
+4. **Environment setup:** Configures runtime environment and paths
+5. **Entry point configuration:** Sets up the command that runs when container starts
+
+**Step 4: Validation**
+
+The build system validates the resulting container:
+
+- ✅ Container image created successfully
+- ✅ All dependencies installed correctly
+- ✅ Entry point is executable
+- ✅ MCP server protocol is accessible
+
+### Build Commands
+
+The project provides convenient build commands through Bun scripts:
+
+```bash
+# Build a specific server by ID
+bun run build single <serverId>
+
+# Build all servers in the catalog
+bun run build all
+
+# Verify package versions across workspace
+bun run check-versions
+```
+
+**Command breakdown:**
+
+| Command | What It Does | When to Use |
+|---------|--------------|-------------|
+| `build single <serverId>` | Builds one server container | During development, testing specific servers |
+| `build all` | Builds all catalog servers | Before submitting PR, ensuring no breaking changes |
+| `check-versions` | Validates dependency versions | Troubleshooting version conflicts |
+
+### Runtime Options
+
+Choose the runtime that best fits your MCP server's technology stack:
+
+| Runtime | Use Case | Advantages | Example Servers |
+|---------|----------|------------|-----------------|
+| **typescript.deno** | New TypeScript servers | Secure by default, built-in TypeScript support, modern APIs | Recommended for all new servers |
+| **typescript.node** | Node.js-specific dependencies | Full npm ecosystem, maximum compatibility | Servers requiring Node-specific packages |
+| **python** | Python-based servers | Python ML/data libraries, extensive package ecosystem | Servers using Python frameworks |
+
+**Minimal configuration example:**
+
+```json
+{
+  "name": "My MCP Server",
+  "runtime": "typescript.deno"
+}
+```
+
+For most custom servers, just specifying `name` and `runtime` is sufficient. The build system automatically handles:
+- Package manager detection
+- Dependency installation
+- Build command inference
+- Container optimization
+
+### Build Optimization
+
+The build system includes several optimizations for faster builds and smaller images:
+
+**Docker layer caching:**
+- Dependency layers are cached and reused when code changes but dependencies don't
+- Reduces rebuild time from minutes to seconds for iterative development
+
+**Multi-stage builds:**
+- Separates build dependencies from runtime dependencies
+- Results in smaller final container images
+
+**Nixpacks providers:**
+- Optimized provider chain minimizes image size
+- Only includes necessary runtime components
+
+### Troubleshooting Builds
+
+Common build issues and their solutions:
+
+| Issue | Likely Cause | Solution |
+|-------|--------------|----------|
+| "command not found" during build | Missing system dependency | Add to `build.aptPkgs` or `build.nixPkgs` |
+| Module/import errors | Wrong runtime specified | Change `runtime` to match your code |
+| Build succeeds, container fails | Incorrect entry point | Verify `build.startCmd` points to correct file |
+| Slow builds | No caching | Ensure Docker layer caching is enabled |
+| Version conflicts | Mismatched dependencies | Run `bun run check-versions` |
+
+**Debugging workflow:**
+
+1. **Check Nixpacks plan:**
+   ```bash
+   cd servers/my-server
+   nixpacks plan .
+   ```
+
+2. **Inspect build logs:**
+   ```bash
+   bun run build single my-server 2>&1 | tee build.log
+   ```
+
+3. **Test locally outside Docker:**
+   ```bash
+   cd servers/my-server
+   bun install
+   bun run server.ts
+   ```
+
+4. **Validate configuration:**
+   - Ensure `metorial.json` follows the schema in `docs/metorial-json-schema.md`
+   - Check that all file paths in configuration exist
+   - Verify runtime matches your implementation language
+
+### Advanced Configuration
+
+For servers with complex build requirements, you can customize the build process:
+
+```json
+{
+  "name": "Advanced MCP Server",
+  "runtime": "typescript.node",
+  "build": {
+    "installCmd": "bun install --production && bun run compile",
+    "startCmd": "node dist/server.js",
+    "aptPkgs": ["git", "build-essential"],
+    "nixPkgs": ["postgresql", "redis"]
+  }
+}
+```
+
+**When to use advanced configuration:**
+- Your server requires system-level dependencies
+- You need custom build steps (compilation, code generation)
+- You're optimizing for production deployment
+- You need specific database or service binaries
+
+For detailed configuration options, see the **[metorial.json Schema Documentation](docs/metorial-json-schema.md)**.
+
 ## Setup Instructions
 
 Follow these steps to get your environment ready and contribute:

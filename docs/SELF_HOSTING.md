@@ -626,7 +626,6 @@ Optimize your self-hosted deployment:
 We welcome contributions to both the platform and MCP servers! See:
 
 - **[Contributing Guide](../CONTRIBUTING.md)** - How to contribute to this repository
-- **[Code of Conduct](../CODE_OF_CONDUCT.md)** - Community guidelines
 
 ---
 

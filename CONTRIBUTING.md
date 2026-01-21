@@ -353,6 +353,45 @@ bun run lint:md:fix   # Fix markdown issues
 - ✅ All files end with a single newline
 - ✅ Imports and code structure follow project patterns
 
+### 7. Naming Conventions
+
+This project follows consistent naming conventions across all MCP servers to ensure clarity and maintainability. When implementing your server, please adhere to these standards:
+
+| Element | Convention | Example |
+|---------|------------|---------|
+| Tool names | snake_case | `create_issue`, `list_repos` |
+| Resource names | kebab-case | `pull-request`, `calendar-event` |
+| Server directories | kebab-case | `google-calendar`, `github` |
+| Config keys | camelCase | `accessToken`, `clientId` |
+
+**Why these conventions matter:**
+- **Tool names** use snake_case to match common API and CLI conventions, making them intuitive for users
+- **Resource names** use kebab-case to align with URL and REST API patterns
+- **Server directories** use kebab-case for consistency with npm package naming and file system compatibility
+- **Config keys** use camelCase to follow JavaScript/TypeScript object property conventions
+
+**Example implementation:**
+
+```typescript
+// ✅ Correct naming
+server.registerTool('create_issue', { ... });
+server.registerResource('pull-request', template, opts, handler);
+
+interface Config {
+  accessToken: string;
+  clientId: string;
+}
+
+// ❌ Incorrect naming
+server.registerTool('CreateIssue', { ... });  // Should be snake_case
+server.registerResource('pullRequest', ...);   // Should be kebab-case
+interface Config {
+  access_token: string;  // Should be camelCase
+}
+```
+
+**Consistency is key:** Following these conventions ensures your server integrates seamlessly with the existing ecosystem and provides a predictable experience for users.
+
 ## Before You Submit
 
 1. Make sure your code follows any existing conventions and structure.

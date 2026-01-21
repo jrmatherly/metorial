@@ -50,6 +50,88 @@ Follow these steps to get your environment ready and contribute:
 6. **Verify your addition**
    Check the `catalog/` directory — your new server config should be listed there.
 
+## Development Workflow
+
+Once you've set up your environment, follow this workflow for iterative development:
+
+### 1. Create a Feature Branch
+
+Always work on a dedicated branch for your changes:
+
+```bash
+# Create and switch to a new branch
+git checkout -b add-<server-name>-server
+
+# Or for other contributions
+git checkout -b fix-<issue-description>
+git checkout -b feature-<feature-name>
+```
+
+### 2. Local Development Loop
+
+Follow this iterative cycle while developing:
+
+| Step | Action | Command |
+|------|--------|---------|
+| **Edit** | Make changes to your server implementation | Edit files in `servers/<name>/` or `catalog/` |
+| **Test Build** | Build your server to verify it works | `bun run build single <serverId>` |
+| **Fix Issues** | Address any build errors or warnings | Review build output and fix |
+| **Iterate** | Repeat until build succeeds | — |
+
+**Example development cycle:**
+
+```bash
+# After making changes to your server
+bun run build single my-new-server
+
+# If build fails, fix the issues and try again
+# If build succeeds, test the functionality
+```
+
+### 3. Testing Your Changes
+
+Before committing, ensure your changes work correctly:
+
+**For new MCP servers:**
+- ✅ Run `bun run build single <serverId>` and verify it completes successfully
+- ✅ Check that the server appears in `catalog/` with correct manifest
+- ✅ Verify all required fields in `metorial.json` are present
+- ✅ Test the server container locally (if possible)
+
+**For other changes:**
+- ✅ Run relevant build commands to ensure nothing breaks
+- ✅ Test the affected functionality
+- ✅ Verify no unintended side effects
+
+### 4. Commit Guidelines
+
+Write clear, descriptive commit messages:
+
+**Format:**
+```bash
+git commit -m "<type>: <short description>"
+```
+
+**Common types:**
+- `feat:` - New MCP server or feature
+- `fix:` - Bug fix
+- `docs:` - Documentation changes
+- `chore:` - Maintenance tasks
+- `refactor:` - Code improvements without changing functionality
+
+**Examples:**
+```bash
+git commit -m "feat: Add Stripe MCP server"
+git commit -m "fix: Resolve OAuth redirect issue in GitHub server"
+git commit -m "docs: Update installation instructions"
+git commit -m "chore: Update dependencies"
+```
+
+**Best practices:**
+- Keep commits focused on a single change
+- Write descriptive messages (not just "fix" or "update")
+- Reference issue numbers if applicable: `fix: Resolve #123 - OAuth token refresh`
+
 ## Before You Submit
 
 1. Make sure your code follows any existing conventions and structure.

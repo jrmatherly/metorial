@@ -45,8 +45,9 @@ Follow these steps to get your environment ready and contribute:
    1. Make sure to check the server manifest when prompted.
    2. The `add-server` script will run a test build to ensure everything is set up correctly.
    3. If you encounter any issues during the build, please ensure to fix them before proceeding.
+   4. For detailed information about configuring your server's `metorial.json` file, see the **[metorial.json Schema Documentation](docs/metorial-json-schema.md)**.
 
-6. **Verify your addition**  
+6. **Verify your addition**
    Check the `catalog/` directory — your new server config should be listed there.
 
 ## Before You Submit

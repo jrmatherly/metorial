@@ -24,7 +24,7 @@ Metorial abstracts away the complexities of MCP and offers a simple, unified int
 - **✨ One-liner SDKs**: Connect your AI model to any API, data source, or tool with a single function call.
 - **🛠️ Powered by MCP**: Metorial is built on the Model Context Protocol, a standard for connecting AI models to external data and tools.
 - **🚀 Get started in minutes**: Metorial is designed to be easy to use, with a simple setup process and a unified interface for all your AI integrations.
-- **🕊️ Self-hosting**: Metorial's source code is hosted on GitHub and you can self-host it.
+- **🕊️ Self-hosting**: Metorial's source code is hosted on GitHub and you can self-host it. See our [self-hosting guide](docs/SELF_HOSTING.md) for setup instructions.
 - **👩‍💻 Built for developers**: Metorial isn't built for end users, but for developers who need high quality tooling, monitoring, and customization options to build agentic AI applications.
 
 ## SDKs
@@ -39,6 +39,8 @@ If you want to build a custom integration, check out our [API documentation](htt
 ## Metorial Platform
 
 The [Metorial Platform](https://github.com/metorial/metorial-platform) is the code that powers the engine behind Metorial. It is open source and can be self-hosted. You can use it to run your own Metorial instance, powered by the MCP servers in this repo.
+
+For detailed self-hosting setup instructions, see our **[Self-Hosting Guide](docs/SELF_HOSTING.md)**.
 
 ## Quick Start
 

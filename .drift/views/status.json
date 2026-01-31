@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-01-31T17:57:44.664Z",
+  "health": {
+    "score": 36,
+    "trend": "stable",
+    "factors": [
+      {
+        "name": "Pattern Approval Rate",
+        "score": 0,
+        "weight": 0.3,
+        "trend": "stable"
+      },
+      {
+        "name": "High Confidence Patterns",
+        "score": 0.72,
+        "weight": 0.3,
+        "trend": "stable"
+      },
+      {
+        "name": "Low Outlier Rate",
+        "score": 0.9923370077449494,
+        "weight": 0.4,
+        "trend": "stable"
+      }
+    ]
+  },
+  "patterns": {
+    "total": 525,
+    "approved": 0,
+    "discovered": 525,
+    "ignored": 0,
+    "byCategory": {
+      "structural": 47,
+      "components": 37,
+      "styling": 34,
+      "api": 15,
+      "auth": 37,
+      "errors": 38,
+      "data-access": 63,
+      "testing": 29,
+      "logging": 30,
+      "security": 45,
+      "config": 34,
+      "types": 44,
+      "performance": 25,
+      "accessibility": 23,
+      "documentation": 24
+    }
+  },
+  "issues": {
+    "critical": 3,
+    "warnings": 0,
+    "topIssues": [
+      {
+        "id": "outlier-4acc471f4e8c1bc8",
+        "type": "outlier",
+        "severity": "critical",
+        "message": "Response Envelope Detector has 138 outliers",
+        "patternId": "4acc471f4e8c1bc8"
+      },
+      {
+        "id": "outlier-16ff68a72ed9422a",
+        "type": "outlier",
+        "severity": "critical",
+        "message": "HTTP Methods Detector has 41 outliers",
+        "patternId": "16ff68a72ed9422a"
+      },
+      {
+        "id": "outlier-112354edf4975480",
+        "type": "outlier",
+        "severity": "critical",
+        "message": "Route Structure Detector has 8 outliers",
+        "patternId": "112354edf4975480"
+      }
+    ]
+  },
+  "security": {
+    "violations": 0,
+    "sensitiveExposures": 0,
+    "riskLevel": "low"
+  },
+  "lastScan": {
+    "timestamp": "2026-01-31T17:57:44.648Z",
+    "duration": 83664,
+    "filesScanned": 8148,
+    "patternsFound": 525,
+    "errors": 0
+  }
+}

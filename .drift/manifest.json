@@ -1,0 +1,107 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-01-31T17:57:44.679Z",
+  "projectRoot": "/Users/jason/dev/new-ai/metorial/metorial",
+  "stats": {
+    "patterns": {
+      "total": 525,
+      "byCategory": {
+        "structural": 47,
+        "components": 37,
+        "styling": 34,
+        "api": 15,
+        "auth": 37,
+        "errors": 38,
+        "data-access": 63,
+        "testing": 29,
+        "logging": 30,
+        "security": 45,
+        "config": 34,
+        "types": 44,
+        "performance": 25,
+        "accessibility": 23,
+        "documentation": 24
+      },
+      "byStatus": {
+        "discovered": 525,
+        "approved": 0,
+        "ignored": 0
+      },
+      "byConfidence": {
+        "high": 378,
+        "medium": 145,
+        "low": 2,
+        "uncertain": 0
+      },
+      "totalLocations": 24216,
+      "totalOutliers": 187
+    },
+    "security": {
+      "totalTables": 0,
+      "totalAccessPoints": 0,
+      "sensitiveFields": 0,
+      "violations": 0,
+      "riskLevel": "low"
+    },
+    "callGraph": {
+      "totalFunctions": 0,
+      "totalCalls": 0,
+      "entryPoints": 0,
+      "dataAccessors": 0,
+      "avgDepth": 0
+    },
+    "contracts": {
+      "verified": 0,
+      "mismatch": 0,
+      "discovered": 0,
+      "ignored": 0
+    },
+    "dna": {
+      "healthScore": 0,
+      "geneticDiversity": 0,
+      "mutations": 0,
+      "dominantGenes": []
+    }
+  },
+  "fileHashes": {},
+  "lastScan": {
+    "timestamp": "2026-01-31T17:57:44.648Z",
+    "duration": 83664,
+    "filesScanned": 8148,
+    "patternsFound": 525,
+    "errors": 0
+  },
+  "views": {
+    "status": {
+      "generatedAt": "2026-01-31T17:57:44.679Z",
+      "stale": true,
+      "invalidatedBy": [
+        "pattern stats updated",
+        "security stats updated",
+        "contract stats updated"
+      ]
+    },
+    "patternIndex": {
+      "generatedAt": "2026-01-31T17:57:44.679Z",
+      "stale": true,
+      "invalidatedBy": [
+        "pattern stats updated"
+      ]
+    },
+    "securitySummary": {
+      "generatedAt": "2026-01-31T17:57:44.679Z",
+      "stale": true,
+      "invalidatedBy": [
+        "security stats updated"
+      ]
+    },
+    "trends": {
+      "generatedAt": "2026-01-31T17:49:17.937Z",
+      "stale": true
+    },
+    "examples": {
+      "generatedAt": "2026-01-31T17:49:17.937Z",
+      "stale": true
+    }
+  }
+}

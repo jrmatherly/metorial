@@ -13,6 +13,7 @@ bun run check-versions  # Verify version consistency
 ## Structure
 
 | Directory | Purpose |
+
 |-----------|---------|
 | `servers/` | MCP server implementations |
 | `packages/` | Shared packages (SDK, manifest) |

@@ -1,6 +1,6 @@
 # Contributing Guide
 
-First off — thank you for your interest in contributing to this project!  
+First off — thank you for your interest in contributing to this project!
 We welcome contributions from everyone and truly appreciate your help in improving our MCP container system or adding new MCP containers.
 
 ## What Can You Contribute?
@@ -22,7 +22,7 @@ Make sure `docker` and `nixpacks` are accessible from your command line after in
 
 Follow these steps to get your environment ready and contribute:
 
-1. **Fork this repository**  
+1. **Fork this repository**
    Click the "Fork" button at the top right of the repo page to create your own copy.
 
 2. **Clone your fork**
@@ -46,7 +46,7 @@ Follow these steps to get your environment ready and contribute:
    2. The `add-server` script will run a test build to ensure everything is set up correctly.
    3. If you encounter any issues during the build, please ensure to fix them before proceeding.
 
-6. **Verify your addition**  
+6. **Verify your addition**
    Check the `catalog/` directory — your new server config should be listed there.
 
 ## Before You Submit

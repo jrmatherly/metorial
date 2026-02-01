@@ -726,14 +726,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.464Z",
-        "lastSeen": "2026-02-01T04:19:42.536Z",
+        "firstSeen": "2026-02-01T05:12:22.643Z",
+        "lastSeen": "2026-02-01T05:12:22.643Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "import-ordering"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.536Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -1462,14 +1461,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.468Z",
-        "lastSeen": "2026-02-01T04:19:42.580Z",
+        "firstSeen": "2026-02-01T05:12:22.645Z",
+        "lastSeen": "2026-02-01T05:12:22.645Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "file-naming"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.580Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -2224,14 +2222,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.468Z",
-        "lastSeen": "2026-02-01T04:19:42.613Z",
+        "firstSeen": "2026-02-01T05:12:22.645Z",
+        "lastSeen": "2026-02-01T05:12:22.645Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "import-ordering"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.613Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -2330,14 +2327,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.468Z",
-        "lastSeen": "2026-02-01T04:19:42.648Z",
+        "firstSeen": "2026-02-01T05:12:22.645Z",
+        "lastSeen": "2026-02-01T05:12:22.645Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "package-boundaries"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.648Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -3066,14 +3062,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.471Z",
-        "lastSeen": "2026-02-01T04:19:42.679Z",
+        "firstSeen": "2026-02-01T05:12:22.647Z",
+        "lastSeen": "2026-02-01T05:12:22.647Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "circular-deps"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.679Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -3704,14 +3699,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.472Z",
-        "lastSeen": "2026-02-01T04:19:42.714Z",
+        "firstSeen": "2026-02-01T05:12:22.648Z",
+        "lastSeen": "2026-02-01T05:12:22.648Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "file-naming"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.714Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -3859,14 +3853,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.473Z",
-        "lastSeen": "2026-02-01T04:19:42.745Z",
+        "firstSeen": "2026-02-01T05:12:22.649Z",
+        "lastSeen": "2026-02-01T05:12:22.649Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "co-location"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.745Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -3979,14 +3972,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.473Z",
-        "lastSeen": "2026-02-01T04:19:42.779Z",
+        "firstSeen": "2026-02-01T05:12:22.649Z",
+        "lastSeen": "2026-02-01T05:12:22.649Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "barrel-exports"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.779Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -4344,14 +4336,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.475Z",
-        "lastSeen": "2026-02-01T04:19:42.811Z",
+        "firstSeen": "2026-02-01T05:12:22.650Z",
+        "lastSeen": "2026-02-01T05:12:22.650Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "directory-structure"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.811Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -4775,14 +4766,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.475Z",
-        "lastSeen": "2026-02-01T04:19:42.842Z",
+        "firstSeen": "2026-02-01T05:12:22.650Z",
+        "lastSeen": "2026-02-01T05:12:22.650Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "file-naming"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.842Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -4853,14 +4843,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.475Z",
-        "lastSeen": "2026-02-01T04:19:42.877Z",
+        "firstSeen": "2026-02-01T05:12:22.650Z",
+        "lastSeen": "2026-02-01T05:12:22.650Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "co-location"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.877Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -4931,14 +4920,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.475Z",
-        "lastSeen": "2026-02-01T04:19:42.911Z",
+        "firstSeen": "2026-02-01T05:12:22.650Z",
+        "lastSeen": "2026-02-01T05:12:22.650Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "barrel-exports"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.911Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -4988,14 +4976,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.475Z",
-        "lastSeen": "2026-02-01T04:19:42.944Z",
+        "firstSeen": "2026-02-01T05:12:22.650Z",
+        "lastSeen": "2026-02-01T05:12:22.650Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "package-boundaries"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.944Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -5172,14 +5159,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.475Z",
-        "lastSeen": "2026-02-01T04:19:42.975Z",
+        "firstSeen": "2026-02-01T05:12:22.650Z",
+        "lastSeen": "2026-02-01T05:12:22.650Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "package-boundaries"
-        ],
-        "approvedAt": "2026-02-01T04:19:42.975Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -5524,14 +5510,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.476Z",
-        "lastSeen": "2026-02-01T04:19:43.008Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "co-location"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.008Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -6197,14 +6182,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.476Z",
-        "lastSeen": "2026-02-01T04:19:43.039Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "import-ordering"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.039Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -6667,14 +6651,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:43.071Z",
+        "firstSeen": "2026-02-01T05:12:22.652Z",
+        "lastSeen": "2026-02-01T05:12:22.652Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "directory-structure"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.071Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -7407,14 +7390,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:43.103Z",
+        "firstSeen": "2026-02-01T05:12:22.652Z",
+        "lastSeen": "2026-02-01T05:12:22.652Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "co-location"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.103Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -8144,14 +8126,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:43.135Z",
+        "firstSeen": "2026-02-01T05:12:22.652Z",
+        "lastSeen": "2026-02-01T05:12:22.652Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "import-ordering"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.135Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -8880,14 +8861,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.485Z",
-        "lastSeen": "2026-02-01T04:19:43.168Z",
+        "firstSeen": "2026-02-01T05:12:22.659Z",
+        "lastSeen": "2026-02-01T05:12:22.659Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "directory-structure"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.168Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -9616,14 +9596,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:43.200Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "directory-structure"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.200Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -9974,14 +9953,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.487Z",
-        "lastSeen": "2026-02-01T04:19:43.235Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "file-naming"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.235Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -10493,14 +10471,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.487Z",
-        "lastSeen": "2026-02-01T04:19:43.267Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "module-boundaries"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.267Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -11229,14 +11206,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.487Z",
-        "lastSeen": "2026-02-01T04:19:43.302Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "directory-structure"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.302Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -11896,14 +11872,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.487Z",
-        "lastSeen": "2026-02-01T04:19:43.341Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "barrel-exports"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.341Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -12100,14 +12075,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.488Z",
-        "lastSeen": "2026-02-01T04:19:43.379Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "module-boundaries"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.379Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -12186,14 +12160,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.488Z",
-        "lastSeen": "2026-02-01T04:19:43.412Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "barrel-exports"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.412Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -12827,14 +12800,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:43.444Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "file-naming"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.444Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -12870,14 +12842,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.490Z",
-        "lastSeen": "2026-02-01T04:19:43.477Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "module-boundaries"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.477Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -12920,14 +12891,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.490Z",
-        "lastSeen": "2026-02-01T04:19:43.509Z",
+        "firstSeen": "2026-02-01T05:12:22.663Z",
+        "lastSeen": "2026-02-01T05:12:22.663Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "file-naming"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.509Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -12963,19 +12933,18 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.490Z",
-        "lastSeen": "2026-02-01T04:19:43.543Z",
+        "firstSeen": "2026-02-01T05:12:22.663Z",
+        "lastSeen": "2026-02-01T05:12:22.663Z",
         "source": "auto-detected",
         "tags": [
           "structural",
           "barrel-exports"
-        ],
-        "approvedAt": "2026-02-01T04:19:43.543Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
     }
   ],
-  "lastUpdated": "2026-02-01T04:19:53.356Z",
-  "checksum": "02b9e6135e09323f"
+  "lastUpdated": "2026-02-01T05:12:22.692Z",
+  "checksum": "765efe3486d3a295"
 }

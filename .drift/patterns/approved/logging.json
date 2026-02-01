@@ -726,14 +726,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.469Z",
-        "lastSeen": "2026-02-01T04:19:48.752Z",
+        "firstSeen": "2026-02-01T05:12:22.645Z",
+        "lastSeen": "2026-02-01T05:12:22.645Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "structured-logging"
-        ],
-        "approvedAt": "2026-02-01T04:19:48.752Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -1007,14 +1006,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.474Z",
-        "lastSeen": "2026-02-01T04:19:48.793Z",
+        "firstSeen": "2026-02-01T05:12:22.649Z",
+        "lastSeen": "2026-02-01T05:12:22.649Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "health-checks"
-        ],
-        "approvedAt": "2026-02-01T04:19:48.793Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -1744,14 +1742,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.478Z",
-        "lastSeen": "2026-02-01T04:19:48.846Z",
+        "firstSeen": "2026-02-01T05:12:22.652Z",
+        "lastSeen": "2026-02-01T05:12:22.652Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "structured-logging"
-        ],
-        "approvedAt": "2026-02-01T04:19:48.846Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -2481,14 +2478,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.478Z",
-        "lastSeen": "2026-02-01T04:19:48.881Z",
+        "firstSeen": "2026-02-01T05:12:22.652Z",
+        "lastSeen": "2026-02-01T05:12:22.652Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "structured-logging"
-        ],
-        "approvedAt": "2026-02-01T04:19:48.881Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -2862,14 +2858,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.478Z",
-        "lastSeen": "2026-02-01T04:19:48.914Z",
+        "firstSeen": "2026-02-01T05:12:22.652Z",
+        "lastSeen": "2026-02-01T05:12:22.652Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "log-levels"
-        ],
-        "approvedAt": "2026-02-01T04:19:48.914Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -3604,14 +3599,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.485Z",
-        "lastSeen": "2026-02-01T04:19:48.951Z",
+        "firstSeen": "2026-02-01T05:12:22.659Z",
+        "lastSeen": "2026-02-01T05:12:22.659Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "structured-logging"
-        ],
-        "approvedAt": "2026-02-01T04:19:48.951Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -4340,14 +4334,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:48.985Z",
+        "firstSeen": "2026-02-01T05:12:22.659Z",
+        "lastSeen": "2026-02-01T05:12:22.659Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "context-fields"
-        ],
-        "approvedAt": "2026-02-01T04:19:48.985Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -5077,14 +5070,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:49.018Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "context-fields"
-        ],
-        "approvedAt": "2026-02-01T04:19:49.018Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -5239,14 +5231,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:49.051Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "context-fields"
-        ],
-        "approvedAt": "2026-02-01T04:19:49.051Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -5464,14 +5455,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:49.085Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "context-fields"
-        ],
-        "approvedAt": "2026-02-01T04:19:49.085Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -6200,14 +6190,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.487Z",
-        "lastSeen": "2026-02-01T04:19:49.117Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "health-checks"
-        ],
-        "approvedAt": "2026-02-01T04:19:49.117Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -6936,14 +6925,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:49.150Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "log-levels"
-        ],
-        "approvedAt": "2026-02-01T04:19:49.150Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -7539,14 +7527,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:49.185Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "health-checks"
-        ],
-        "approvedAt": "2026-02-01T04:19:49.185Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -7589,14 +7576,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:49.217Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "context-fields"
-        ],
-        "approvedAt": "2026-02-01T04:19:49.217Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -8325,19 +8311,18 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:49.251Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "logging",
           "context-fields"
-        ],
-        "approvedAt": "2026-02-01T04:19:49.251Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
     }
   ],
-  "lastUpdated": "2026-02-01T04:19:53.369Z",
-  "checksum": "8e55690c5d92bd6c"
+  "lastUpdated": "2026-02-01T05:12:22.715Z",
+  "checksum": "95d77c89a60c5d5c"
 }

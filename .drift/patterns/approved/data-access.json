@@ -732,14 +732,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.469Z",
-        "lastSeen": "2026-02-01T04:19:46.713Z",
+        "firstSeen": "2026-02-01T05:12:22.645Z",
+        "lastSeen": "2026-02-01T05:12:22.646Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "query-patterns"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.713Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -1468,14 +1467,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.470Z",
-        "lastSeen": "2026-02-01T04:19:46.745Z",
+        "firstSeen": "2026-02-01T05:12:22.646Z",
+        "lastSeen": "2026-02-01T05:12:22.646Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "validation"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.745Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -2204,14 +2202,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.470Z",
-        "lastSeen": "2026-02-01T04:19:46.776Z",
+        "firstSeen": "2026-02-01T05:12:22.646Z",
+        "lastSeen": "2026-02-01T05:12:22.646Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "n-plus-one"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.776Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -2950,14 +2947,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.470Z",
-        "lastSeen": "2026-02-01T04:19:46.807Z",
+        "firstSeen": "2026-02-01T05:12:22.646Z",
+        "lastSeen": "2026-02-01T05:12:22.646Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "query-access"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.807Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -3697,14 +3693,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.470Z",
-        "lastSeen": "2026-02-01T04:19:46.839Z",
+        "firstSeen": "2026-02-01T05:12:22.646Z",
+        "lastSeen": "2026-02-01T05:12:22.646Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "sensitive-field"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.839Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -4434,14 +4429,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.471Z",
-        "lastSeen": "2026-02-01T04:19:46.870Z",
+        "firstSeen": "2026-02-01T05:12:22.647Z",
+        "lastSeen": "2026-02-01T05:12:22.647Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "query-patterns"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.870Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -5183,14 +5177,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:46.902Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "query-patterns"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.902Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -5919,14 +5912,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:46.934Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "query-patterns"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.934Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -6039,14 +6031,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:46.969Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "repository-pattern"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.969Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -6436,14 +6427,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:47.002Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "n-plus-one"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.002Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -7178,14 +7168,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.478Z",
-        "lastSeen": "2026-02-01T04:19:47.034Z",
+        "firstSeen": "2026-02-01T05:12:22.652Z",
+        "lastSeen": "2026-02-01T05:12:22.652Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "connection-pooling"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.034Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -7425,14 +7414,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.478Z",
-        "lastSeen": "2026-02-01T04:19:47.066Z",
+        "firstSeen": "2026-02-01T05:12:22.652Z",
+        "lastSeen": "2026-02-01T05:12:22.652Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "connection-pooling"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.066Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -8161,14 +8149,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.485Z",
-        "lastSeen": "2026-02-01T04:19:47.100Z",
+        "firstSeen": "2026-02-01T05:12:22.659Z",
+        "lastSeen": "2026-02-01T05:12:22.659Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "query-access"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.100Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -8724,14 +8711,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:47.132Z",
+        "firstSeen": "2026-02-01T05:12:22.659Z",
+        "lastSeen": "2026-02-01T05:12:22.659Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "connection-pooling"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.132Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -9159,14 +9145,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:47.164Z",
+        "firstSeen": "2026-02-01T05:12:22.659Z",
+        "lastSeen": "2026-02-01T05:12:22.659Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "dto-patterns"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.164Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -9629,14 +9614,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:47.197Z",
+        "firstSeen": "2026-02-01T05:12:22.659Z",
+        "lastSeen": "2026-02-01T05:12:22.659Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "connection-pooling"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.197Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -10368,14 +10352,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:47.230Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "dto-patterns"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.230Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -10432,14 +10415,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:47.264Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "repository-pattern"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.264Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -10587,14 +10569,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:47.296Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "dto-patterns"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.296Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -11327,14 +11308,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:47.328Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "query-access"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.328Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -12063,14 +12043,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:47.360Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "orm-model"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.360Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -12799,14 +12778,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:47.391Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "orm-model"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.391Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -13535,14 +13513,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.487Z",
-        "lastSeen": "2026-02-01T04:19:47.424Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "sensitive-field"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.424Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -13893,14 +13870,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.487Z",
-        "lastSeen": "2026-02-01T04:19:47.457Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "orm-model"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.457Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -14327,14 +14303,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.487Z",
-        "lastSeen": "2026-02-01T04:19:47.489Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "repository-pattern"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.489Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -14687,14 +14662,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.487Z",
-        "lastSeen": "2026-02-01T04:19:47.522Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "validation"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.522Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -14751,14 +14725,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.488Z",
-        "lastSeen": "2026-02-01T04:19:47.554Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "validation"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.554Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -14885,14 +14858,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.488Z",
-        "lastSeen": "2026-02-01T04:19:47.588Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "dto-patterns"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.588Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -14998,14 +14970,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.488Z",
-        "lastSeen": "2026-02-01T04:19:47.620Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "repository-pattern"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.620Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -15740,14 +15711,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.488Z",
-        "lastSeen": "2026-02-01T04:19:47.652Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "n-plus-one"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.652Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -16477,14 +16447,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.488Z",
-        "lastSeen": "2026-02-01T04:19:47.687Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "query-access"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.687Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -17104,14 +17073,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:47.720Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "sensitive-field"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.720Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -17841,14 +17809,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:47.756Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "query-access"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.756Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -17891,14 +17858,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:47.789Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "query-patterns"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.789Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -18627,14 +18593,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:47.823Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "dto-patterns"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.823Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -18705,14 +18670,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:47.856Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "orm-model"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.856Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -19375,14 +19339,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:47.892Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "orm-model"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.892Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -19446,14 +19409,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:47.929Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "query-patterns"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.929Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -19496,14 +19458,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:47.963Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "n-plus-one"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.963Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -19539,19 +19500,18 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:47.997Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "data-access",
           "connection-pooling"
-        ],
-        "approvedAt": "2026-02-01T04:19:47.997Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
     }
   ],
-  "lastUpdated": "2026-02-01T04:19:53.364Z",
-  "checksum": "754a9cc0ee2cc6bd"
+  "lastUpdated": "2026-02-01T05:12:22.705Z",
+  "checksum": "f0ee1a6c802194a0"
 }

@@ -54,14 +54,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.463Z",
-        "lastSeen": "2026-02-01T04:19:46.066Z",
+        "firstSeen": "2026-02-01T05:12:22.643Z",
+        "lastSeen": "2026-02-01T05:12:22.643Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "error-codes"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.066Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -139,14 +138,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.464Z",
-        "lastSeen": "2026-02-01T04:19:46.098Z",
+        "firstSeen": "2026-02-01T05:12:22.643Z",
+        "lastSeen": "2026-02-01T05:12:22.643Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "circuit-breaker"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.098Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -875,14 +873,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.468Z",
-        "lastSeen": "2026-02-01T04:19:46.132Z",
+        "firstSeen": "2026-02-01T05:12:22.645Z",
+        "lastSeen": "2026-02-01T05:12:22.645Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "error-logging"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.132Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -1642,14 +1639,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.474Z",
-        "lastSeen": "2026-02-01T04:19:46.167Z",
+        "firstSeen": "2026-02-01T05:12:22.649Z",
+        "lastSeen": "2026-02-01T05:12:22.649Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "error-codes"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.167Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -2383,14 +2379,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.476Z",
-        "lastSeen": "2026-02-01T04:19:46.199Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "circuit-breaker"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.199Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -2545,14 +2540,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:46.232Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "exception-hierarchy"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.232Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -2630,14 +2624,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:46.265Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "try-catch"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.265Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -3374,14 +3367,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:46.297Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "async-errors"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.297Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -3543,14 +3535,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:46.329Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "circuit-breaker"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.329Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -3831,14 +3822,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:46.360Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.651Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "circuit-breaker"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.360Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -4568,14 +4558,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:46.391Z",
+        "firstSeen": "2026-02-01T05:12:22.651Z",
+        "lastSeen": "2026-02-01T05:12:22.652Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "error-logging"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.391Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -5305,14 +5294,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.477Z",
-        "lastSeen": "2026-02-01T04:19:46.425Z",
+        "firstSeen": "2026-02-01T05:12:22.652Z",
+        "lastSeen": "2026-02-01T05:12:22.652Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "error-logging"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.425Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -6047,14 +6035,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.485Z",
-        "lastSeen": "2026-02-01T04:19:46.457Z",
+        "firstSeen": "2026-02-01T05:12:22.659Z",
+        "lastSeen": "2026-02-01T05:12:22.659Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "error-logging"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.457Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -6795,14 +6782,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:46.489Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "error-codes"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.489Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -6901,14 +6887,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.486Z",
-        "lastSeen": "2026-02-01T04:19:46.521Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "error-propagation"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.521Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -6951,14 +6936,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.487Z",
-        "lastSeen": "2026-02-01T04:19:46.553Z",
+        "firstSeen": "2026-02-01T05:12:22.660Z",
+        "lastSeen": "2026-02-01T05:12:22.660Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "error-propagation"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.553Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -7687,14 +7671,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:46.585Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.661Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "exception-hierarchy"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.585Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -8304,14 +8287,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:46.616Z",
+        "firstSeen": "2026-02-01T05:12:22.661Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "error-codes"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.616Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -9040,14 +9022,13 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:46.647Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "try-catch"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.647Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
@@ -9167,19 +9148,18 @@
       ],
       "outliers": [],
       "metadata": {
-        "firstSeen": "2026-01-31T17:57:44.489Z",
-        "lastSeen": "2026-02-01T04:19:46.679Z",
+        "firstSeen": "2026-02-01T05:12:22.662Z",
+        "lastSeen": "2026-02-01T05:12:22.662Z",
         "source": "auto-detected",
         "tags": [
           "errors",
           "error-codes"
-        ],
-        "approvedAt": "2026-02-01T04:19:46.679Z"
+        ]
       },
       "severity": "info",
       "autoFixable": false
     }
   ],
-  "lastUpdated": "2026-02-01T04:19:53.363Z",
-  "checksum": "21dcaae7df171a02"
+  "lastUpdated": "2026-02-01T05:12:22.703Z",
+  "checksum": "7422c90269623d3b"
 }

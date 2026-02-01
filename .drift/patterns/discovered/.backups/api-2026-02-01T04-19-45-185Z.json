@@ -1,0 +1,400 @@
+{
+  "version": "1.0.0",
+  "category": "api",
+  "patterns": [
+    {
+      "id": "e8e99c92be419233",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/pagination-metadata"
+        }
+      },
+      "confidence": {
+        "frequency": 0.12,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 12,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/discord/server.ts",
+          "line": 662,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 663,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/exa/server.ts",
+          "line": 48,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 208,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 208,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 154,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 192,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/notion/server.ts",
+          "line": 160,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/resend/server.ts",
+          "line": 160,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 209,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 534,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 550,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-01-31T17:57:44.490Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "08f0501b55d1661f",
+      "subcategory": "response-envelope",
+      "name": "Response Envelope Detector",
+      "description": "Detects response envelope patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/response-envelope",
+          "patternId": "api/response-envelope/pagination-page-based"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 208,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 208,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/notion/server.ts",
+          "line": 160,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 534,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-01-31T17:57:44.490Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "response-envelope"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "30f9ea608b8af055",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-delete"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 479,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-01-31T17:57:44.490Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "d7aca6f2ac31ce2f",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/versioning"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 205,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 79,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 23,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 54,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-01-31T17:57:44.490Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f20b699d58b9a609",
+      "subcategory": "route-structure",
+      "name": "Route Structure Detector",
+      "description": "Detects route URL structure patterns and flags inconsistencies",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/route-structure",
+          "patternId": "api/route-structure/versioned-api"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 205,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 79,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 23,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 1
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 54,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-01-31T17:57:44.490Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "route-structure"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "2a0eba2f6a7059dc",
+      "subcategory": "http-methods",
+      "name": "HTTP Methods Detector",
+      "description": "Detects HTTP method usage patterns and flags RESTful convention violations",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "api/http-methods",
+          "patternId": "api/http-methods/method-head"
+        }
+      },
+      "confidence": {
+        "frequency": 0.01,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 155,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 1
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-01-31T17:57:44.490Z",
+        "source": "auto-detected",
+        "tags": [
+          "api",
+          "http-methods"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-01T04:19:45.154Z",
+  "checksum": "a9fb90ec872cfe02"
+}

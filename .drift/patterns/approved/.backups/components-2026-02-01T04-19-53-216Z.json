@@ -1,0 +1,5907 @@
+{
+  "version": "1.0.0",
+  "category": "components",
+  "patterns": [
+    {
+      "id": "a316d416a718233f",
+      "subcategory": "props-patterns",
+      "name": "Props Patterns Detector",
+      "description": "Learns props patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/props-patterns",
+          "patternId": "components/props-patterns/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.08,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": ".github/.github/PULL_REQUEST_TEMPLATE.md",
+          "line": 18,
+          "column": 201,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 1,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.9199999999999999
+        },
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 322,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 352,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.464Z",
+        "lastSeen": "2026-02-01T04:19:43.579Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "props-patterns"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.579Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "c6b7f223bab959a9",
+      "subcategory": "props-patterns",
+      "name": "Props Patterns Detector",
+      "description": "Learns props patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/props-patterns",
+          "patternId": "components/props-patterns/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 38,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": ".github/workflows/build-changed.yml",
+          "line": 23,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.83
+        },
+        {
+          "file": ".github/workflows/build-many.yml",
+          "line": 5,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": ".github/workflows/build-many.yml",
+          "line": 11,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": ".github/workflows/build-many.yml",
+          "line": 22,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 5,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.8258823529411765
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 11,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.8258823529411765
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 25,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.8258823529411765
+        },
+        {
+          "file": ".github/workflows/deploy-index.yml",
+          "line": 18,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": ".github/workflows/discover-versions.yml",
+          "line": 5,
+          "column": 5,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 264,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 298,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 346,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 435,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 474,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 517,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 559,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 607,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 644,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 685,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 145,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 401,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 477,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 539,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 605,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 160,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 445,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 507,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 573,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 611,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 685,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 744,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 807,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8616666666666666
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 90,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 177,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 212,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 246,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 279,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 311,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 342,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 376,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 232,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 273,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 334,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 376,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 413,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 456,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 497,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 547,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 580,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 619,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 662,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 943,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 31,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 53,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 127,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 217,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 240,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 264,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 274,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 302,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 337,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 364,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 387,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 411,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 422,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 451,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 462,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 494,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 516,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 536,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 577,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 597,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 630,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 654,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 682,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 702,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 723,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 742,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 769,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 797,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 817,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 850,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 884,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 911,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 930,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 975,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 995,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 1015,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 1053,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 1072,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 1087,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 1111,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 1130,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 1151,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 1187,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 1208,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/context7/server.ts",
+          "line": 137,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/context7/server.ts",
+          "line": 188,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 17,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.8897916666666666
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 35,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.8897916666666666
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.468Z",
+        "lastSeen": "2026-02-01T04:19:43.611Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "props-patterns"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.611Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f6725fb0730c8ba5",
+      "subcategory": "props-patterns",
+      "name": "Props Patterns Detector",
+      "description": "Learns props patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/props-patterns",
+          "patternId": "components/props-patterns/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 18,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": ".github/workflows/build-changed.yml",
+          "line": 63,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.83
+        },
+        {
+          "file": ".github/workflows/build-many.yml",
+          "line": 34,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 113,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.8258823529411765
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 123,
+          "column": 63,
+          "isOutlier": false,
+          "confidence": 0.8258823529411765
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 125,
+          "column": 63,
+          "isOutlier": false,
+          "confidence": 0.8258823529411765
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 129,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.8258823529411765
+        },
+        {
+          "file": ".github/workflows/discover-versions.yml",
+          "line": 72,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": ".github/workflows/discover-versions.yml",
+          "line": 78,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 68,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 105,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 281,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 435,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 468,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 468,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 469,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8245454545454545
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 66,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 818,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 818,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 819,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 821,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 821,
+          "column": 40,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 1167,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 1167,
+          "column": 63,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 1168,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 1170,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 1170,
+          "column": 65,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 1171,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 1171,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 1172,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 1172,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.7912765957446808
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 70,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 401,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 72,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 70,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.802
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 401,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 72,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 197,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 197,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 206,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 206,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 248,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 248,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 270,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 270,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 275,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 275,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 310,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 311,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 312,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 313,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 314,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 315,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 389,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 389,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 398,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 398,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 438,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 438,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 460,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 460,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 465,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 465,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 500,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 501,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 502,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 503,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 504,
+          "column": 26,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 505,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 579,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 579,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 585,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 585,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 634,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 634,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 660,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 660,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 671,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 671,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 716,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 717,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 718,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 719,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 785,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 785,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 790,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 790,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 841,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 842,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 843,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 844,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 845,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1068,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1069,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1120,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1121,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1122,
+          "column": 29,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1123,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1124,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1176,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1177,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7849038461538461
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.468Z",
+        "lastSeen": "2026-02-01T04:19:43.647Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "props-patterns"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.647Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f337bbd825a19a13",
+      "subcategory": "component-structure",
+      "name": "Component Structure Detector",
+      "description": "Learns component structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/component-structure",
+          "patternId": "components/component-structure/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.57,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 15,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/README.md",
+          "line": 10,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/README.md",
+          "line": 10,
+          "column": 111,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/manifest.json",
+          "line": 29,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/manifest.json",
+          "line": 29,
+          "column": 129,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/1b5d661e41ddb67b22a1918cca63a85801a0b8b7/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/1b5d661e41ddb67b22a1918cca63a85801a0b8b7/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/2a456c3738324ed0a8f540bfd484f68f305d6be9/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/2a456c3738324ed0a8f540bfd484f68f305d6be9/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/4c50f0fa5c98958cb0af0ad121e3bc7f517003c6/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/4c50f0fa5c98958cb0af0ad121e3bc7f517003c6/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/870f6d9af5ff04f8846a6777958e2880f8b8008c/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/870f6d9af5ff04f8846a6777958e2880f8b8008c/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/ba1f71e62879e6c0026322cf518f4ccf02620414/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/ba1f71e62879e6c0026322cf518f4ccf02620414/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 29,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "scripts/import/src/sources/awesome.ts",
+          "line": 75,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "scripts/import/src/sources/mcp.ts",
+          "line": 42,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 210,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.8254347826086956
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 220,
+          "column": 61,
+          "isOutlier": false,
+          "confidence": 0.8254347826086956
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 278,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 310,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 341,
+          "column": 65,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 375,
+          "column": 77,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 310,
+          "column": 95,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 197,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 270,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 389,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 460,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 579,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 660,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 785,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 368,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 368,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 368,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 302,
+          "column": 79,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 745,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.843404255319149
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.483Z",
+        "lastSeen": "2026-02-01T04:19:43.679Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "component-structure"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.679Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "0ed4001c8d90bac8",
+      "subcategory": "duplicate-detection",
+      "name": "Duplicate Detection Detector",
+      "description": "Learns duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/duplicate-detection",
+          "patternId": "components/duplicate-detection/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.49,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 13,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/README.md",
+          "line": 10,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/README.md",
+          "line": 10,
+          "column": 111,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/manifest.json",
+          "line": 29,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/manifest.json",
+          "line": 29,
+          "column": 129,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/1b5d661e41ddb67b22a1918cca63a85801a0b8b7/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/1b5d661e41ddb67b22a1918cca63a85801a0b8b7/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/2a456c3738324ed0a8f540bfd484f68f305d6be9/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/2a456c3738324ed0a8f540bfd484f68f305d6be9/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/4c50f0fa5c98958cb0af0ad121e3bc7f517003c6/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/4c50f0fa5c98958cb0af0ad121e3bc7f517003c6/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/870f6d9af5ff04f8846a6777958e2880f8b8008c/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/870f6d9af5ff04f8846a6777958e2880f8b8008c/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/ba1f71e62879e6c0026322cf518f4ccf02620414/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/ba1f71e62879e6c0026322cf518f4ccf02620414/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 29,
+          "column": 24,
+          "isOutlier": true,
+          "confidence": 0.7949999999999999,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "scripts/import/src/sources/awesome.ts",
+          "line": 75,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "scripts/import/src/sources/mcp.ts",
+          "line": 42,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 278,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.9075
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 310,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.9075
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 341,
+          "column": 65,
+          "isOutlier": false,
+          "confidence": 0.9075
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 375,
+          "column": 77,
+          "isOutlier": false,
+          "confidence": 0.9075
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 197,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 270,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 389,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 460,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 579,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 660,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 785,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 368,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8876470588235293
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 368,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.8876470588235293
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 368,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.8876470588235293
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 302,
+          "column": 79,
+          "isOutlier": false,
+          "confidence": 0.8876470588235293
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.483Z",
+        "lastSeen": "2026-02-01T04:19:43.713Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "duplicate-detection"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.713Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "2ced24b64be67773",
+      "subcategory": "near-duplicate",
+      "name": "Near Duplicate Detector",
+      "description": "Learns near-duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/near-duplicate",
+          "patternId": "components/near-duplicate/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.49,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 13,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/README.md",
+          "line": 10,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/README.md",
+          "line": 10,
+          "column": 111,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/manifest.json",
+          "line": 29,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/manifest.json",
+          "line": 29,
+          "column": 129,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/1b5d661e41ddb67b22a1918cca63a85801a0b8b7/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/1b5d661e41ddb67b22a1918cca63a85801a0b8b7/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/2a456c3738324ed0a8f540bfd484f68f305d6be9/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/2a456c3738324ed0a8f540bfd484f68f305d6be9/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/4c50f0fa5c98958cb0af0ad121e3bc7f517003c6/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/4c50f0fa5c98958cb0af0ad121e3bc7f517003c6/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/870f6d9af5ff04f8846a6777958e2880f8b8008c/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/870f6d9af5ff04f8846a6777958e2880f8b8008c/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/ba1f71e62879e6c0026322cf518f4ccf02620414/version.json",
+          "line": 32,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/versions/ba1f71e62879e6c0026322cf518f4ccf02620414/version.json",
+          "line": 32,
+          "column": 131,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 29,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "scripts/import/src/sources/awesome.ts",
+          "line": 75,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "scripts/import/src/sources/mcp.ts",
+          "line": 42,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 278,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.8904545454545454
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 310,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.8904545454545454
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 341,
+          "column": 65,
+          "isOutlier": false,
+          "confidence": 0.8904545454545454
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 375,
+          "column": 77,
+          "isOutlier": false,
+          "confidence": 0.8904545454545454
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 197,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 270,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 389,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 460,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 579,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 660,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 785,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 368,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 368,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 368,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 302,
+          "column": 79,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.483Z",
+        "lastSeen": "2026-02-01T04:19:43.745Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "near-duplicate"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.745Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "b43a1e6409719460",
+      "subcategory": "duplicate-detection",
+      "name": "Duplicate Detection Detector",
+      "description": "Learns duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/duplicate-detection",
+          "patternId": "components/duplicate-detection/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.14,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "catalog/AI-Agent-Hub/ai-agent-marketplace-index-mcp/ai-agent-marketplace-index-mcp/README.md",
+          "line": 10,
+          "column": 130,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/AI-Agent-Hub/ai-agent-marketplace-index-mcp/ai-agent-marketplace-index-mcp/manifest.json",
+          "line": 16,
+          "column": 148,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/AI-Agent-Hub/ai-agent-marketplace-index-mcp/ai-agent-marketplace-index-mcp/versions/10b3ac7fb5a90ad2cdc9f7828aa72f6ae677dfb2/version.json",
+          "line": 19,
+          "column": 150,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/AI-Agent-Hub/ai-agent-marketplace-index-mcp/ai-agent-marketplace-index-mcp/versions/46e21651fec0b655253fd2aa06a64cac64a873d3/version.json",
+          "line": 19,
+          "column": 150,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/AI-Agent-Hub/ai-agent-marketplace-index-mcp/ai-agent-marketplace-index-mcp/versions/bc2a86d59e04757f3c5c13586715121616e3ffd3/version.json",
+          "line": 19,
+          "column": 150,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "catalog/AI-Agent-Hub/ai-agent-marketplace-index-mcp/ai-agent-marketplace-index-mcp/versions/d0f1b74f80f71d0fbde67823b443ef00b90ea565/version.json",
+          "line": 19,
+          "column": 150,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 307,
+          "column": 43,
+          "isOutlier": true,
+          "confidence": 0.9520512820512821,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "servers/tavily/server.ts",
+          "line": 372,
+          "column": 74,
+          "isOutlier": true,
+          "confidence": 0.9116666666666666,
+          "outlierReason": "Value below IQR lower bound"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.485Z",
+        "lastSeen": "2026-02-01T04:19:43.786Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "duplicate-detection"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.786Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "2e950be71d5eed56",
+      "subcategory": "state-patterns",
+      "name": "State Patterns Detector",
+      "description": "Learns state management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/state-patterns",
+          "patternId": "components/state-patterns/conditional"
+        }
+      },
+      "confidence": {
+        "frequency": 0.56,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "catalog/GeLi2001/shopify-mcp/shopify-mcp/README.md",
+          "line": 10,
+          "column": 55,
+          "isOutlier": true,
+          "confidence": 0.97,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "catalog/GeLi2001/shopify-mcp/shopify-mcp/manifest.json",
+          "line": 41,
+          "column": 73,
+          "isOutlier": true,
+          "confidence": 0.97,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "catalog/GeLi2001/shopify-mcp/shopify-mcp/versions/3920a9ff3088845b66ca41bfa59cd76b7b6448f0/version.json",
+          "line": 44,
+          "column": 75,
+          "isOutlier": true,
+          "confidence": 0.97,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "catalog/GeLi2001/shopify-mcp/shopify-mcp/versions/9b0a135f087d7a7728913ae0a6ac0748ea42f4cd/version.json",
+          "line": 44,
+          "column": 75,
+          "isOutlier": true,
+          "confidence": 0.97,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "catalog/GeLi2001/shopify-mcp/shopify-mcp/versions/a777b2006dc92c640081d675916462acddec87e7/version.json",
+          "line": 44,
+          "column": 75,
+          "isOutlier": true,
+          "confidence": 0.97,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 772,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 772,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 772,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 876,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 876,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 876,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 914,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 946,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1023,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1023,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1023,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1083,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1083,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1083,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1215,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1215,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1215,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1314,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1352,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 747,
+          "column": 13,
+          "isOutlier": true,
+          "confidence": 0.7949999999999999,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 384,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.83
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 384,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.83
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 384,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.83
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.486Z",
+        "lastSeen": "2026-02-01T04:19:43.820Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "state-patterns"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.820Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "d8fd32bf00a6d1bc",
+      "subcategory": "props-patterns",
+      "name": "Props Patterns Detector",
+      "description": "Learns props patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/props-patterns",
+          "patternId": "components/props-patterns/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.16,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.9199999999999999,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 19,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.9199999999999999
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 43,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9199999999999999
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 50,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9199999999999999
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 82,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.9199999999999999
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 114,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.9199999999999999
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 126,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.9199999999999999
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 577,
+          "column": 41,
+          "isOutlier": true,
+          "confidence": 0.7949999999999999,
+          "outlierReason": "Value below IQR lower bound"
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 577,
+          "column": 41,
+          "isOutlier": true,
+          "confidence": 0.7949999999999999,
+          "outlierReason": "Value below IQR lower bound"
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.488Z",
+        "lastSeen": "2026-02-01T04:19:43.855Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "props-patterns"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.855Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "5493eb3e574dbe31",
+      "subcategory": "component-structure",
+      "name": "Component Structure Detector",
+      "description": "Learns component structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/component-structure",
+          "patternId": "components/component-structure/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.59,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 24,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 51,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8254347826086956
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 411,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9325
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 483,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9325
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 549,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9325
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 66,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 44,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9515789473684211
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 977,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.9156896551724139
+        },
+        {
+          "file": "servers/context7/server.ts",
+          "line": 51,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 251,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.9565384615384616
+        },
+        {
+          "file": "servers/exa/server.ts",
+          "line": 98,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "servers/exa/server.ts",
+          "line": 188,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "servers/exa/server.ts",
+          "line": 344,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.8999999999999999
+        },
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 246,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8778947368421053
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 521,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.9590624999999999
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 215,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.9524999999999999
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 258,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.956
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 215,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.9524999999999999
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 45,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 160,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 192,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 224,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 256,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 288,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 320,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 353,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 196,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 388,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 578,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 784,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1008,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1208,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1226,
+          "column": 71,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 274,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 244,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 277,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 516,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 729,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 827,
+          "column": 67,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 959,
+          "column": 67,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 1285,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/perplexity/server.ts",
+          "line": 148,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.9381818181818182
+        },
+        {
+          "file": "servers/perplexity/server.ts",
+          "line": 355,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9381818181818182
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 115,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 202,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 329,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 411,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 478,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 597,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/resend/server.ts",
+          "line": 166,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.956
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 393,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 528,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 671,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 849,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 990,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 1117,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 1232,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/tavily/server.ts",
+          "line": 41,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8825
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 37,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9565384615384616
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 554,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.843404255319149
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.489Z",
+        "lastSeen": "2026-02-01T04:19:43.888Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "component-structure"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.888Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "67ee58311e64c75b",
+      "subcategory": "component-structure",
+      "name": "Component Structure Detector",
+      "description": "Learns component structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/component-structure",
+          "patternId": "components/component-structure/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.44,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 7,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 134,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8254347826086956
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 232,
+          "column": 48,
+          "isOutlier": false,
+          "confidence": 0.8254347826086956
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 232,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.8254347826086956
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 313,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8254347826086956
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 349,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8254347826086956
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 349,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.8254347826086956
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 703,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8254347826086956
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 932,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.9156896551724139
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 932,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.9156896551724139
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 952,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.9156896551724139
+        },
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 112,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8778947368421053
+        },
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 136,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.8778947368421053
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 340,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 340,
+          "column": 64,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 829,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9587096774193549
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 33,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.9474193548387096
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 123,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.843404255319149
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 145,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.843404255319149
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 145,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.843404255319149
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 145,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.843404255319149
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 114,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.843404255319149
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 114,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.843404255319149
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 140,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.843404255319149
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.489Z",
+        "lastSeen": "2026-02-01T04:19:43.921Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "component-structure"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.921Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "ef7d0e403c05ab1b",
+      "subcategory": "duplicate-detection",
+      "name": "Duplicate Detection Detector",
+      "description": "Learns duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/duplicate-detection",
+          "patternId": "components/duplicate-detection/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.59,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 24,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 51,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9554166666666666
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 411,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9423684210526315
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 483,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9423684210526315
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 549,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9423684210526315
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 66,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9075
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 44,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.956
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 977,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.9632692307692308
+        },
+        {
+          "file": "servers/context7/server.ts",
+          "line": 51,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9547826086956521
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 251,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.9583333333333333
+        },
+        {
+          "file": "servers/exa/server.ts",
+          "line": 98,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9199999999999999
+        },
+        {
+          "file": "servers/exa/server.ts",
+          "line": 188,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.9199999999999999
+        },
+        {
+          "file": "servers/exa/server.ts",
+          "line": 344,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9199999999999999
+        },
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 246,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9515789473684211
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 521,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.9620454545454545
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 215,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.9583333333333333
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 258,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.961025641025641
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 215,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.9583333333333333
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 45,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.8943243243243243
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 160,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8943243243243243
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 192,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8943243243243243
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 224,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8943243243243243
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 256,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8943243243243243
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 288,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8943243243243243
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 320,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.8943243243243243
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 353,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.8943243243243243
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 196,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 388,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 578,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 784,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1008,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1208,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1226,
+          "column": 71,
+          "isOutlier": false,
+          "confidence": 0.8957575757575758
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 274,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.8876470588235293
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 244,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.931111111111111
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 277,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.931111111111111
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 516,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.931111111111111
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 729,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.931111111111111
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 827,
+          "column": 67,
+          "isOutlier": false,
+          "confidence": 0.931111111111111
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 959,
+          "column": 67,
+          "isOutlier": false,
+          "confidence": 0.931111111111111
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 1285,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.931111111111111
+        },
+        {
+          "file": "servers/perplexity/server.ts",
+          "line": 148,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.9450000000000001
+        },
+        {
+          "file": "servers/perplexity/server.ts",
+          "line": 355,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9450000000000001
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 115,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 202,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 329,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 411,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 478,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 597,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "servers/resend/server.ts",
+          "line": 166,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.957037037037037
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 393,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.9237735849056603
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 528,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9237735849056603
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 671,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.9237735849056603
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 849,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.9237735849056603
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 990,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.9237735849056603
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 1117,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.9237735849056603
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 1232,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.9237735849056603
+        },
+        {
+          "file": "servers/tavily/server.ts",
+          "line": 41,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9116666666666666
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 37,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9583333333333333
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 554,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.8683870967741936
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.489Z",
+        "lastSeen": "2026-02-01T04:19:43.951Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "duplicate-detection"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.951Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f0555b830d0ab432",
+      "subcategory": "near-duplicate",
+      "name": "Near Duplicate Detector",
+      "description": "Learns near-duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/near-duplicate",
+          "patternId": "components/near-duplicate/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.59,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 24,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 51,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9505555555555556
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 411,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9325
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 483,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9325
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 549,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9325
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 66,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8904545454545454
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 44,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9515789473684211
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 977,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.962391304347826
+        },
+        {
+          "file": "servers/context7/server.ts",
+          "line": 51,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 251,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.9565384615384616
+        },
+        {
+          "file": "servers/exa/server.ts",
+          "line": 98,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.931111111111111
+        },
+        {
+          "file": "servers/exa/server.ts",
+          "line": 188,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.931111111111111
+        },
+        {
+          "file": "servers/exa/server.ts",
+          "line": 344,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.931111111111111
+        },
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 246,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 521,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.9590624999999999
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 215,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.9524999999999999
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 258,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.956
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 215,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.9524999999999999
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 45,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 160,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 192,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 224,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 256,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 288,
+          "column": 55,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 320,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 353,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.8796774193548387
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 196,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 388,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 578,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 784,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1008,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1208,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 1226,
+          "column": 71,
+          "isOutlier": false,
+          "confidence": 0.8883333333333333
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 274,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 244,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 277,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 516,
+          "column": 68,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 729,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 827,
+          "column": 67,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 959,
+          "column": 67,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 1285,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.9270175438596491
+        },
+        {
+          "file": "servers/perplexity/server.ts",
+          "line": 148,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.9381818181818182
+        },
+        {
+          "file": "servers/perplexity/server.ts",
+          "line": 355,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9381818181818182
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 115,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 202,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 329,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 411,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 478,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 597,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.908235294117647
+        },
+        {
+          "file": "servers/resend/server.ts",
+          "line": 166,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.956
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 393,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 528,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 671,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 849,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 990,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 1117,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 1232,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.9155555555555555
+        },
+        {
+          "file": "servers/tavily/server.ts",
+          "line": 41,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8825
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 37,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.9565384615384616
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 554,
+          "column": 47,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.489Z",
+        "lastSeen": "2026-02-01T04:19:43.983Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "near-duplicate"
+        ],
+        "approvedAt": "2026-02-01T04:19:43.983Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "9c8ca2b802431540",
+      "subcategory": "component-structure",
+      "name": "Component Structure Detector",
+      "description": "Learns component structure patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/component-structure",
+          "patternId": "components/component-structure/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.9474193548387096,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 928,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.9156896551724139
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 307,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.9474193548387096
+        },
+        {
+          "file": "servers/tavily/server.ts",
+          "line": 372,
+          "column": 74,
+          "isOutlier": false,
+          "confidence": 0.8825
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-02-01T04:19:44.016Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "component-structure"
+        ],
+        "approvedAt": "2026-02-01T04:19:44.016Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "fa546768934880bd",
+      "subcategory": "state-patterns",
+      "name": "State Patterns Detector",
+      "description": "Learns state management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/state-patterns",
+          "patternId": "components/state-patterns/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.86,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 17,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 41,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 41,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 27,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 27,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 21,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 21,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 19,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 19,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 541,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 541,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 541,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 656,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 656,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 656,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 39,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 39,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 43,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 43,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 45,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 45,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 43,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 43,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 45,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 45,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 54,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 54,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 504,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 504,
+          "column": 37,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 504,
+          "column": 51,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 40,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 40,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 60,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 60,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/notion/server.ts",
+          "line": 31,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/notion/server.ts",
+          "line": 31,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 31,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 31,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 45,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 45,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/slack/server.ts",
+          "line": 37,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/slack/server.ts",
+          "line": 37,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 38,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/stripe/server.ts",
+          "line": 38,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-02-01T04:19:44.047Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "state-patterns"
+        ],
+        "approvedAt": "2026-02-01T04:19:44.047Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "095e7a7d057d71bd",
+      "subcategory": "ref-forwarding",
+      "name": "Ref Forwarding Detector",
+      "description": "Learns ref forwarding patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/ref-forwarding",
+          "patternId": "components/ref-forwarding/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 17,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 114,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 114,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 127,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 133,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 133,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 153,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 153,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/confluence/server.ts",
+          "line": 153,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 71,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 71,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 81,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 87,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 87,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 109,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 109,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/discord/server.ts",
+          "line": 109,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 66,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 66,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 76,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 80,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 80,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 104,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 104,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 104,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 887,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.83
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 92,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 92,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 97,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 97,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 127,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 127,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 131,
+          "column": 73,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 131,
+          "column": 79,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 184,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 184,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 188,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 188,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 511,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 551,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 558,
+          "column": 69,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 558,
+          "column": 75,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1496,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8679166666666667
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 86,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 86,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 96,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 101,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 101,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 122,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 122,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 122,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/gmail/server.ts",
+          "line": 344,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 90,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 90,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 100,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 105,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 105,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 126,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 126,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-calendar/server.ts",
+          "line": 126,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 92,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 92,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 102,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 107,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 107,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 128,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 128,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-docs/server.ts",
+          "line": 128,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 90,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 90,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 100,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 105,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 105,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 126,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 126,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-drive/server.ts",
+          "line": 126,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 92,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 92,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 102,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 107,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 107,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 128,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 128,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/google-sheets/server.ts",
+          "line": 128,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 99,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 99,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 108,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 114,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 114,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 134,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 134,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 134,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 113,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 113,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 126,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 132,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 132,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 152,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 152,
+          "column": 34,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 152,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/microsoft356/server.ts",
+          "line": 110,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.97
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-02-01T04:19:44.078Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "ref-forwarding"
+        ],
+        "approvedAt": "2026-02-01T04:19:44.078Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "f68baba85a93468d",
+      "subcategory": "state-patterns",
+      "name": "State Patterns Detector",
+      "description": "Learns state management patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/state-patterns",
+          "patternId": "components/state-patterns/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.52,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 6,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 214,
+          "column": 7,
+          "isOutlier": true,
+          "confidence": 0.97,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 363,
+          "column": 11,
+          "isOutlier": true,
+          "confidence": 0.97,
+          "outlierReason": "Value above IQR upper bound"
+        },
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 363,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.97
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 409,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 409,
+          "column": 84,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 449,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 532,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 532,
+          "column": 76,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 649,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/github/server.ts",
+          "line": 649,
+          "column": 83,
+          "isOutlier": false,
+          "confidence": 0.7533333333333333
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 756,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 756,
+          "column": 85,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 855,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 855,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1008,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1008,
+          "column": 85,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1051,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1189,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/gitlab/server.ts",
+          "line": 1189,
+          "column": 72,
+          "isOutlier": false,
+          "confidence": 0.8215151515151515
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 487,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/hubspot/server.ts",
+          "line": 487,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 742,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 742,
+          "column": 57,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 748,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 748,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 373,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.83
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-02-01T04:19:44.109Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "state-patterns"
+        ],
+        "approvedAt": "2026-02-01T04:19:44.109Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "17907642034a6152",
+      "subcategory": "duplicate-detection",
+      "name": "Duplicate Detection Detector",
+      "description": "Learns duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/duplicate-detection",
+          "patternId": "components/duplicate-detection/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.14,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/jira/server.ts",
+          "line": 340,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8876470588235293
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 340,
+          "column": 64,
+          "isOutlier": false,
+          "confidence": 0.8876470588235293
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 829,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.961025641025641
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 33,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.9520512820512821
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 123,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8683870967741936
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 145,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8683870967741936
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 145,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.8683870967741936
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 145,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.8683870967741936
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-02-01T04:19:44.143Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "duplicate-detection"
+        ],
+        "approvedAt": "2026-02-01T04:19:44.143Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a2337fc91b861bea",
+      "subcategory": "near-duplicate",
+      "name": "Near Duplicate Detector",
+      "description": "Learns near-duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/near-duplicate",
+          "patternId": "components/near-duplicate/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.14,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 4,
+        "score": 0.95,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/jira/server.ts",
+          "line": 340,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/jira/server.ts",
+          "line": 340,
+          "column": 64,
+          "isOutlier": false,
+          "confidence": 0.8766666666666667
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 829,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.9587096774193549
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 33,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.9474193548387096
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 123,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 145,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 145,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        },
+        {
+          "file": "servers/whatsapp/server.ts",
+          "line": 145,
+          "column": 49,
+          "isOutlier": false,
+          "confidence": 0.8533333333333333
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-02-01T04:19:44.175Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "near-duplicate"
+        ],
+        "approvedAt": "2026-02-01T04:19:44.175Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "d5ee2fea9014bb60",
+      "subcategory": "near-duplicate",
+      "name": "Near Duplicate Detector",
+      "description": "Learns near-duplicate component patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "components/near-duplicate",
+          "patternId": "components/near-duplicate/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.9474193548387096,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 307,
+          "column": 43,
+          "isOutlier": false,
+          "confidence": 0.9474193548387096
+        },
+        {
+          "file": "servers/tavily/server.ts",
+          "line": 372,
+          "column": 74,
+          "isOutlier": false,
+          "confidence": 0.8825
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-02-01T04:19:44.205Z",
+        "source": "auto-detected",
+        "tags": [
+          "components",
+          "near-duplicate"
+        ],
+        "approvedAt": "2026-02-01T04:19:44.205Z"
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-01T04:19:53.178Z",
+  "checksum": "70c986f84603d51b"
+}

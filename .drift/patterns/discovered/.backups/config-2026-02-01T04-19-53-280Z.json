@@ -1,0 +1,2401 @@
+{
+  "version": "1.0.0",
+  "category": "config",
+  "patterns": [
+    {
+      "id": "b7b398331343d597",
+      "subcategory": "config-validation",
+      "name": "Config Validation Detector",
+      "description": "Learns configuration validation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/config-validation",
+          "patternId": "config/config-validation/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.96,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 24,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": ".github/workflows/build-changed.yml",
+          "line": 27,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-changed.yml",
+          "line": 28,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 30,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 31,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 77,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 78,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 151,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 152,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/deploy-index.yml",
+          "line": 22,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/deploy-index.yml",
+          "line": 23,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/discover-versions.yml",
+          "line": 21,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/discover-versions.yml",
+          "line": 22,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/discover-versions.yml",
+          "line": 41,
+          "column": 23,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/discover-versions.yml",
+          "line": 65,
+          "column": 75,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": ".github/workflows/legal.yml",
+          "line": 1,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "AGENTS.md",
+          "line": 10,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "line": 45,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "line": 50,
+          "column": 4,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "line": 55,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "line": 49,
+          "column": 6,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 199,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/QuantGeekDev/mongo-mcp/mongo-mcp/README.md",
+          "line": 10,
+          "column": 129,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/benborla/mcp-server-mysql/mcp-server-mysql/README.md",
+          "line": 10,
+          "column": 119,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/blurrah/mcp-graphql/mcp-graphql/README.md",
+          "line": 10,
+          "column": 111,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/co-browser/attestable-mcp-server/attestable-mcp-server/README.md",
+          "line": 10,
+          "column": 1,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/domdomegg/airtable-mcp-server/airtable-mcp-server/README.md",
+          "line": 10,
+          "column": 137,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hannesj/mcp-graphql-schema/mcp-graphql-schema/README.md",
+          "line": 10,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hannesj/mcp-graphql-schema/mcp-graphql-schema/README.md",
+          "line": 10,
+          "column": 184,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hannesj/mcp-graphql-schema/mcp-graphql-schema/README.md",
+          "line": 20,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hannesj/mcp-graphql-schema/mcp-graphql-schema/README.md",
+          "line": 20,
+          "column": 86,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hannesj/mcp-graphql-schema/mcp-graphql-schema/README.md",
+          "line": 27,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hannesj/mcp-graphql-schema/mcp-graphql-schema/README.md",
+          "line": 27,
+          "column": 74,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hannesj/mcp-openapi-schema/mcp-openapi-schema/README.md",
+          "line": 10,
+          "column": 60,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hannesj/mcp-openapi-schema/mcp-openapi-schema/README.md",
+          "line": 20,
+          "column": 66,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hannesj/mcp-openapi-schema/mcp-openapi-schema/README.md",
+          "line": 20,
+          "column": 86,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hannesj/mcp-openapi-schema/mcp-openapi-schema/README.md",
+          "line": 27,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hannesj/mcp-openapi-schema/mcp-openapi-schema/README.md",
+          "line": 27,
+          "column": 74,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/kukapay/token-revoke-mcp/token-revoke-mcp/README.md",
+          "line": 10,
+          "column": 19,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/modelcontextprotocol/servers/postgres/README.md",
+          "line": 10,
+          "column": 134,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/qianniuspace/mcp-security-audit/mcp-security-audit/README.md",
+          "line": 10,
+          "column": 181,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/sammcj/mcp-package-version/mcp-package-version/README.md",
+          "line": 10,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 6,
+          "column": 3,
+          "isOutlier": true,
+          "confidence": 0.5366666666666666,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 112,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/airtable/server.ts",
+          "line": 677,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/notion/server.ts",
+          "line": 550,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.6699999999999999
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 141,
+          "column": 24,
+          "isOutlier": true,
+          "confidence": 0.595,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 142,
+          "column": 16,
+          "isOutlier": true,
+          "confidence": 0.595,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 634,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.470Z",
+        "lastSeen": "2026-01-31T17:57:44.470Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "config-validation"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "2ca8eb0cb8bc895a",
+      "subcategory": "env-config",
+      "name": "Environment Config Detector",
+      "description": "Learns environment configuration patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/env-config",
+          "patternId": "config/env-config/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 322,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 92,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 111,
+          "column": 97,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 132,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 164,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "line": 23,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "line": 44,
+          "column": 42,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "line": 50,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 265,
+          "column": 70,
+          "isOutlier": false,
+          "confidence": 0.6299999999999999
+        },
+        {
+          "file": "catalog/21st-dev/magic-mcp/magic-mcp/README.md",
+          "line": 37,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/66julienmartin/MCP-server-Deepseek_R1/mcp-server-deepseek-r-1/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/AbdelStark/nostr-mcp/nostr-mcp/README.md",
+          "line": 27,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/AbdelStark/nostr-mcp/nostr-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/AshDevFr/discourse-mcp-server/discourse-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/AudienseCo/mcp-audiense-insights/mcp-audiense-insights/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Badhansen/notion-mcp/notion-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Bankless/onchain-mcp/onchain-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/BurtTheCoder/mcp-maigret/mcp-maigret/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/BurtTheCoder/mcp-shodan/mcp-shodan/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/BurtTheCoder/mcp-virustotal/mcp-virustotal/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/ChanMeng666/server-google-news/server-google-news/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/ChristophEnglisch/keycloak-model-context-protocol/keycloak-model-context-protocol/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/CircleCI-Public/mcp-server-circleci/mcp-server-circleci/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/DMontgomery40/deepseek-mcp-server/deepseek-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Dumpling-AI/mcp-server-dumplingai/mcp-server-dumplingai/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/EduBase/MCP/mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/GLips/Figma-Context-MCP/figma-context-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/GeLi2001/datadog-mcp-server/datadog-mcp-server/README.md",
+          "line": 37,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/GeLi2001/shopify-mcp/shopify-mcp/README.md",
+          "line": 37,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/GeLi2001/tft-mcp-server/tft-mcp-server/README.md",
+          "line": 37,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/GongRzhe/Langflow-DOC-QA-SERVER/langflow-doc-qa-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/HenryHaoson/Yuque-MCP-Server/yuque-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Hypersequent/qasphere-mcp/qasphere-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/IBM/wxflows/javascript/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/InhiblabCore/mcp-image-compression/mcp-image-compression/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/JetBrains/mcpProxy/mcp-proxy/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/JordiNeil/mcp-databricks-server/mcp-databricks-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/JoshuaRileyDev/app-store-connect-mcp-server/app-store-connect-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/JoshuaRileyDev/supabase/supabase/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/KS-GEN-AI/confluence-mcp-server/confluence-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/KS-GEN-AI/jira-mcp-server/jira-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Kong/mcp-konnect/mcp-konnect/README.md",
+          "line": 10,
+          "column": 136,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Kong/mcp-konnect/mcp-konnect/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/KyrieTangSheng/mcp-server-nationalparks/mcp-server-nationalparks/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Laksh-star/mcp-server-tmdb/mcp-server-tmdb/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/OctagonAI/octagon-mcp-server/octagon-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/OctoMind-dev/octomind-mcp/octomind-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/PaddleHQ/paddle-mcp-server/paddle-mcp-server/README.md",
+          "line": 37,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/PostHog/posthog-mcp/posthog-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/ProgramComputer/NASA-MCP-server/nasa-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/QAInsights/locust-mcp-server/locust-mcp-server/README.md",
+          "line": 10,
+          "column": 190,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/QuantGeekDev/mongo-mcp/mongo-mcp/README.md",
+          "line": 37,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/ReAPI-com/mcp-openapi/mcp-openapi/README.md",
+          "line": 37,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Rootly-AI-Labs/Rootly-MCP-server/rootly-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/SDGLBL/mcp-claude-code/mcp-claude-code/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/SaintDoresh/Weather-MCP-ClaudeDesktop/weather-mcp-claude-desktop/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/SaseQ/discord-mcp/discord-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/SecretiveShell/MCP-searxng/mcp-searxng/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/SecretiveShell/MCP-wolfram-alpha/mcp-wolfram-alpha/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Seym0n/tiktok-mcp/tiktok-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Spathodea-Network/opencti-mcp/opencti-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/StarRocks/mcp-server-starrocks/mcp-server-starrocks/README.md",
+          "line": 10,
+          "column": 184,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/StarRocks/mcp-server-starrocks/mcp-server-starrocks/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Tiberriver256/mcp-server-azure-devops/mcp-server-azure-devops/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Tomatio13/mcp-server-tavily/mcp-server-tavily/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Unstructured-IO/UNS-MCP/uns-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/UserAd/didlogic_mcp/didlogic-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Verodat/verodat-mcp-server/verodat-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/VeyraX/veyrax-mcp/veyrax-mcp/README.md",
+          "line": 10,
+          "column": 129,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/VeyraX/veyrax-mcp/veyrax-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Vortiago/mcp-azure-devops/mcp-azure-devops/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/XeroAPI/xero-mcp-server/xero-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Zhwt/go-mcp-mysql/go-mcp-mysql/README.md",
+          "line": 37,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/ZilongXue/claude-post/claude-post/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/abhiz123/todoist-mcp-server/todoist-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/ac3xx/mcp-servers-kagi/mcp-servers-kagi/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/adenot/mcp-google-search/mcp-google-search/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/admica/FileScopeMCP/file-scope-mcp/README.md",
+          "line": 37,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/agentmail-to/agentmail-toolkit/mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/ahnlabio/bicscan-mcp/bicscan-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/allenporter/mcp-server-home-assistant/mcp-server-home-assistant/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/amidabuddha/unichat-mcp-server/unichat-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/andybrandt/mcp-simple-openai-assistant/mcp-simple-openai-assistant/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/andybrandt/mcp-simple-pubmed/mcp-simple-pubmed/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/angheljf/nyt/nyt/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/anjor/coinmarket-mcp-server/coinmarket-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/api7/apisix-mcp/apisix-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/apify/actors-mcp-server/actors-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/apify/mcp-server-rag-web-browser/mcp-server-rag-web-browser/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/apimatic/apimatic-validator-mcp/apimatic-validator-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/apinetwork/piapi-mcp-server/piapi-mcp-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/arpitbatra123/mcp-googletasks/mcp-googletasks/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/ashiknesin/pushover-mcp/pushover-mcp/README.md",
+          "line": 37,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/awkoy/replicate-flux-mcp/replicate-flux-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/axiomhq/mcp-server-axiom/mcp-server-axiom/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/base/base-mcp/base-mcp/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/bazinga012/mcp_code_executor/mcp-code-executor/README.md",
+          "line": 27,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 0.6109090909090908
+        },
+        {
+          "file": "catalog/bazinga012/mcp_code_executor/mcp-code-executor/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.6109090909090908
+        },
+        {
+          "file": "catalog/benborla/mcp-server-mysql/mcp-server-mysql/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/bigcodegen/mcp-neovim-server/mcp-neovim-server/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/blurrah/mcp-graphql/mcp-graphql/README.md",
+          "line": 38,
+          "column": 38,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.473Z",
+        "lastSeen": "2026-01-31T17:57:44.473Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "env-config"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "ed873dfd9f26de80",
+      "subcategory": "default-values",
+      "name": "Default Values Detector",
+      "description": "Learns default value patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/default-values",
+          "patternId": "config/default-values/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 21,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/Tiberriver256/mcp-server-azure-devops/mcp-server-azure-devops/README.md",
+          "line": 27,
+          "column": 144,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/furey/mongodb-lens/mongodb-lens/README.md",
+          "line": 27,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/perplexity/server.ts",
+          "line": 43,
+          "column": 4,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "servers/slack/server.ts",
+          "line": 569,
+          "column": 52,
+          "isOutlier": false,
+          "confidence": 0.595
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.473Z",
+        "lastSeen": "2026-01-31T17:57:44.473Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "default-values"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "a60c0b3a5522f493",
+      "subcategory": "environment-detection",
+      "name": "Environment Detection Detector",
+      "description": "Learns environment detection patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/environment-detection",
+          "patternId": "config/environment-detection/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 1,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 16,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 92,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 111,
+          "column": 97,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 132,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": ".github/workflows/build-single.yml",
+          "line": 164,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.6199999999999999
+        },
+        {
+          "file": "AGENTS.md",
+          "line": 21,
+          "column": 16,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "line": 23,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/AbdelStark/nostr-mcp/nostr-mcp/README.md",
+          "line": 27,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.6533333333333333
+        },
+        {
+          "file": "catalog/QAInsights/locust-mcp-server/locust-mcp-server/README.md",
+          "line": 10,
+          "column": 190,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/QAInsights/locust-mcp-server/locust-mcp-server/README.md",
+          "line": 10,
+          "column": 178,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/VeyraX/veyrax-mcp/veyrax-mcp/README.md",
+          "line": 10,
+          "column": 129,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/bazinga012/mcp_code_executor/mcp-code-executor/README.md",
+          "line": 27,
+          "column": 62,
+          "isOutlier": false,
+          "confidence": 0.7
+        },
+        {
+          "file": "catalog/executeautomation/mcp-playwright/mcp-playwright/README.md",
+          "line": 10,
+          "column": 249,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/graphlit/graphlit-mcp-server/graphlit-mcp-server/README.md",
+          "line": 27,
+          "column": 90,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/modelcontextprotocol/servers/puppeteer/README.md",
+          "line": 10,
+          "column": 208,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/nwiizo/tfmcp/tfmcp/README.md",
+          "line": 10,
+          "column": 134,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/olostep/olostep-mcp-server/olostep-mcp-server/README.md",
+          "line": 31,
+          "column": 64,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/rad-security/mcp-server/mcp-server/README.md",
+          "line": 10,
+          "column": 121,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/ramp-public/ramp-mcp/ramp-mcp/README.md",
+          "line": 27,
+          "column": 92,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 96,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.6144444444444443
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 100,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.6144444444444443
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 100,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.6144444444444443
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 121,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.6144444444444443
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 121,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.6144444444444443
+        },
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 138,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.6144444444444443
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 147,
+          "column": 8,
+          "isOutlier": false,
+          "confidence": 0.5546153846153845
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 157,
+          "column": 32,
+          "isOutlier": false,
+          "confidence": 0.5546153846153845
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 247,
+          "column": 56,
+          "isOutlier": false,
+          "confidence": 0.5546153846153845
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 671,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.5546153846153845
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 704,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.5546153846153845
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 754,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5546153846153845
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 773,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5546153846153845
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 802,
+          "column": 18,
+          "isOutlier": false,
+          "confidence": 0.5546153846153845
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 815,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.5546153846153845
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.473Z",
+        "lastSeen": "2026-01-31T17:57:44.473Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "environment-detection"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "3bb3806970e5d821",
+      "subcategory": "feature-flags",
+      "name": "Feature Flags Detector",
+      "description": "Learns feature flag patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/feature-flags",
+          "patternId": "config/feature-flags/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.41,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 25,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "DOCKER_SERVERS.md",
+          "line": 21,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "README.md",
+          "line": 270,
+          "column": 30,
+          "isOutlier": true,
+          "confidence": 0.5366666666666666,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "catalog/AbdelStark/bitcoin-mcp/bitcoin-mcp/README.md",
+          "line": 20,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/AbdelStark/bitcoin-mcp/bitcoin-mcp/README.md",
+          "line": 27,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/AbdelStark/nostr-mcp/nostr-mcp/README.md",
+          "line": 20,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/AbdelStark/nostr-mcp/nostr-mcp/README.md",
+          "line": 28,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/KyrieTangSheng/mcp-server-nationalparks/mcp-server-nationalparks/README.md",
+          "line": 10,
+          "column": 85,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/XeroAPI/xero-mcp-server/xero-mcp-server/README.md",
+          "line": 10,
+          "column": 201,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/ZilongXue/claude-post/claude-post/README.md",
+          "line": 10,
+          "column": 224,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/abhiz123/todoist-mcp-server/todoist-mcp-server/README.md",
+          "line": 20,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/abhiz123/todoist-mcp-server/todoist-mcp-server/README.md",
+          "line": 28,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/apinetwork/piapi-mcp-server/piapi-mcp-server/README.md",
+          "line": 10,
+          "column": 121,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/furey/mongodb-lens/mongodb-lens/README.md",
+          "line": 10,
+          "column": 75,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/hardik-id/azure-resource-graph-mcp-server/azure-resource-graph-mcp-server/README.md",
+          "line": 10,
+          "column": 129,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/joshuayoes/ios-simulator-mcp/ios-simulator-mcp/README.md",
+          "line": 10,
+          "column": 154,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/modelcontextprotocol/servers/everything/README.md",
+          "line": 10,
+          "column": 46,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/modelcontextprotocol/servers/memory/README.md",
+          "line": 10,
+          "column": 114,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/nwiizo/tfmcp/tfmcp/README.md",
+          "line": 10,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/ruixingshi/deepseek-thinker-mcp/deepseek-thinker-mcp/README.md",
+          "line": 10,
+          "column": 75,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/runekaagaard/mcp-alchemy/mcp-alchemy/README.md",
+          "line": 10,
+          "column": 58,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/sunsetcoder/flightradar24-mcp-server/flightradar-24-mcp-server/README.md",
+          "line": 10,
+          "column": 166,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 147,
+          "column": 57,
+          "isOutlier": true,
+          "confidence": 0.56,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 713,
+          "column": 18,
+          "isOutlier": true,
+          "confidence": 0.56,
+          "outlierReason": "Low confidence outlier"
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 169,
+          "column": 53,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 204,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/brave/server.ts",
+          "line": 522,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 61,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 87,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 115,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 141,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 167,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 195,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.72
+        },
+        {
+          "file": "servers/hackernews/server.ts",
+          "line": 33,
+          "column": 3,
+          "isOutlier": false,
+          "confidence": 0.6922222222222223
+        },
+        {
+          "file": "servers/slack/server.ts",
+          "line": 779,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/slack/server.ts",
+          "line": 922,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/slack/server.ts",
+          "line": 1102,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 184,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 265,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 44,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 70,
+          "column": 36,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/vercel/server.ts",
+          "line": 96,
+          "column": 27,
+          "isOutlier": false,
+          "confidence": 0.77
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.477Z",
+        "lastSeen": "2026-01-31T17:57:44.477Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "feature-flags"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "604af211e1648c54",
+      "subcategory": "required-optional",
+      "name": "Required/Optional Detector",
+      "description": "Learns required/optional configuration patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/required-optional",
+          "patternId": "config/required-optional/unknown"
+        }
+      },
+      "confidence": {
+        "frequency": 0.16,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 8,
+        "score": 0.77,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "README.md",
+          "line": 210,
+          "column": 105,
+          "isOutlier": false,
+          "confidence": 0.595
+        },
+        {
+          "file": "catalog/Tiberriver256/mcp-server-azure-devops/mcp-server-azure-devops/README.md",
+          "line": 27,
+          "column": 144,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/furey/mongodb-lens/mongodb-lens/README.md",
+          "line": 27,
+          "column": 87,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/olostep/olostep-mcp-server/olostep-mcp-server/README.md",
+          "line": 39,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "catalog/pskill9/web-search/web-search/README.md",
+          "line": 10,
+          "column": 117,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/calendly/server.ts",
+          "line": 266,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.7037837837837837
+        },
+        {
+          "file": "servers/exa/server.ts",
+          "line": 172,
+          "column": 54,
+          "isOutlier": false,
+          "confidence": 0.7593939393939393
+        },
+        {
+          "file": "servers/perplexity/server.ts",
+          "line": 150,
+          "column": 25,
+          "isOutlier": false,
+          "confidence": 0.595
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.478Z",
+        "lastSeen": "2026-01-31T17:57:44.478Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "required-optional"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "8173b247866e27bc",
+      "subcategory": "config-validation",
+      "name": "Config Validation Detector",
+      "description": "Learns configuration validation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/config-validation",
+          "patternId": "config/config-validation/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.06,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.87,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "scripts/add-server/src/cli.ts",
+          "line": 174,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.7366666666666666
+        },
+        {
+          "file": "scripts/check-versions/src/index.ts",
+          "line": 10,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/notion/server.ts",
+          "line": 541,
+          "column": 45,
+          "isOutlier": false,
+          "confidence": 0.87
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.488Z",
+        "lastSeen": "2026-01-31T17:57:44.488Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "config-validation"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "c764a99d6c45f75f",
+      "subcategory": "default-values",
+      "name": "Default Values Detector",
+      "description": "Learns default value patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/default-values",
+          "patternId": "config/default-values/import"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "scripts/add-server/src/index.ts",
+          "line": 2,
+          "column": 10,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.488Z",
+        "lastSeen": "2026-01-31T17:57:44.488Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "default-values"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "10d74f1db8a6929b",
+      "subcategory": "env-config",
+      "name": "Environment Config Detector",
+      "description": "Learns environment configuration patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/env-config",
+          "patternId": "config/env-config/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.2,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 5,
+        "score": 0.8325,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "scripts/import/src/index.ts",
+          "line": 69,
+          "column": 50,
+          "isOutlier": false,
+          "confidence": 0.82
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 533,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 533,
+          "column": 28,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/dropbox/server.ts",
+          "line": 533,
+          "column": 39,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 26,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8325
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 26,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.8325
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 41,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8325
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 41,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.8325
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 52,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.8325
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 52,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.8325
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 75,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.8325
+        },
+        {
+          "file": "servers/resend/server.ts",
+          "line": 285,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.77
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 34,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.8109090909090909
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 59,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8109090909090909
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 111,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.8109090909090909
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.488Z",
+        "lastSeen": "2026-01-31T17:57:44.488Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "env-config"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "e4e6bbc23dab6cf3",
+      "subcategory": "feature-flags",
+      "name": "Feature Flags Detector",
+      "description": "Learns feature flag patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/feature-flags",
+          "patternId": "config/feature-flags/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.04,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.76,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 181,
+          "column": 13,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 745,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 761,
+          "column": 41,
+          "isOutlier": false,
+          "confidence": 0.76
+        },
+        {
+          "file": "servers/arXiv/server.ts",
+          "line": 805,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.76
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-01-31T17:57:44.490Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "feature-flags"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "3a68ee43f182c854",
+      "subcategory": "env-config",
+      "name": "Environment Config Detector",
+      "description": "Learns environment configuration patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/env-config",
+          "patternId": "config/env-config/function_call"
+        }
+      },
+      "confidence": {
+        "frequency": 0.02,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 1,
+        "score": 0.7949999999999999,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 348,
+          "column": 44,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-01-31T17:57:44.490Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "env-config"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "458d658fa8142c2a",
+      "subcategory": "config-validation",
+      "name": "Config Validation Detector",
+      "description": "Learns configuration validation patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/config-validation",
+          "patternId": "config/config-validation/assignment"
+        }
+      },
+      "confidence": {
+        "frequency": 0.14,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 3,
+        "score": 0.87,
+        "level": "high"
+      },
+      "locations": [
+        {
+          "file": "servers/firecrawl/server.ts",
+          "line": 121,
+          "column": 9,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/notion/server.ts",
+          "line": 538,
+          "column": 11,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/notion/server.ts",
+          "line": 544,
+          "column": 30,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/notion/server.ts",
+          "line": 941,
+          "column": 17,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/notion/server.ts",
+          "line": 992,
+          "column": 21,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/notion/server.ts",
+          "line": 992,
+          "column": 35,
+          "isOutlier": false,
+          "confidence": 0.87
+        },
+        {
+          "file": "servers/supabase/server.ts",
+          "line": 163,
+          "column": 15,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-01-31T17:57:44.490Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "config-validation"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    },
+    {
+      "id": "4862804ec101723a",
+      "subcategory": "environment-detection",
+      "name": "Environment Detection Detector",
+      "description": "Learns environment detection patterns from your codebase",
+      "detector": {
+        "type": "regex",
+        "config": {
+          "detectorId": "config/environment-detection",
+          "patternId": "config/environment-detection/property_access"
+        }
+      },
+      "confidence": {
+        "frequency": 0.2,
+        "consistency": 0.9,
+        "age": 0,
+        "spread": 2,
+        "score": 0.816875,
+        "level": "medium"
+      },
+      "locations": [
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 26,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.816875
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 26,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.816875
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 41,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.816875
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 41,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.816875
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 52,
+          "column": 7,
+          "isOutlier": false,
+          "confidence": 0.816875
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 52,
+          "column": 33,
+          "isOutlier": false,
+          "confidence": 0.816875
+        },
+        {
+          "file": "servers/quickbooks/server.ts",
+          "line": 75,
+          "column": 24,
+          "isOutlier": false,
+          "confidence": 0.816875
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 34,
+          "column": 20,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 59,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        },
+        {
+          "file": "servers/salesforce/server.ts",
+          "line": 111,
+          "column": 22,
+          "isOutlier": false,
+          "confidence": 0.7949999999999999
+        }
+      ],
+      "outliers": [],
+      "metadata": {
+        "firstSeen": "2026-01-31T17:57:44.490Z",
+        "lastSeen": "2026-01-31T17:57:44.490Z",
+        "source": "auto-detected",
+        "tags": [
+          "config",
+          "environment-detection"
+        ]
+      },
+      "severity": "info",
+      "autoFixable": false
+    }
+  ],
+  "lastUpdated": "2026-02-01T04:19:53.245Z",
+  "checksum": "bbf658b64b33287a"
+}
